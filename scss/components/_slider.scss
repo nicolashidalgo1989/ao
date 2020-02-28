@@ -1,0 +1,75 @@
+.carousel.slide {
+    height: 666px;
+    margin-bottom: 50px;
+    @include media(md) {
+        margin-bottom: 70px;
+    }
+    .carousel-inner {
+        .carousel-item {
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            &.light {
+                &>* {
+                    color: $dark;
+                }
+            }
+            &.dark {
+                &>* {
+                    color: $white;
+                }
+            }
+            .carousel-caption {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                @include media(xs) {
+                    left: 0;
+                    right: 0;
+                }
+                @include media(md) {
+                    left: 11%;
+                    right: 11%;
+                }
+                h3 {
+                    @include media(md) {
+                        font-size: 60px;
+                        line-height: 70px;
+                        letter-spacing: 1.3px;
+                        font-weight: 400;
+                    }
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0;
+                    @include media(md) {
+                        font-size: 20px;
+                    }
+                    strong {
+                        font-weight: 700
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../img/flecha-izquierda-blanca.svg');
+    &:hover {
+        background-image: url('../../img/flecha-izquierda-verde.svg');
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../img/flecha-derecha-blanca.svg');
+    &:hover {
+        background-image: url('../../img/flecha-derecha-verde.svg');
+    }
+}

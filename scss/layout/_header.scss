@@ -1,0 +1,71 @@
+.navbar {
+    // padding-top: 25px;
+    background-color: transparent!important;
+    .navbar-toggler {
+        padding: 0;
+        .navbar-toggler-icon {
+            background: none;
+            width: 24px;
+            height: 2.4px;
+            background: white;
+            border-radius: 4px;
+            &:before,
+            &:after {
+                content: "";
+                width: 32px;
+                height: 2.4px;
+                background: white;
+                border-radius: 4px;
+                display: block;
+            }
+            &:before {
+                margin-top: -12px;
+            }
+            &:after {
+                margin-top: 22px;
+            }
+        }
+    }
+    .navbar-brand {
+        width: 62px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        background-image: url(../../img/logo-ao-black.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        &:hover {
+            background-image: url(../../img/logo-ao-white.svg);
+        }
+    }
+    .shopping-cart-btn {
+        flex-grow: 0;
+        position: relative;
+        .cart-number {
+            position: absolute;
+            bottom: 3px;
+            left: -9px;
+            margin: 0;
+            border-radius: 50px;
+            background: $green;
+            color: white;
+            width: 21px;
+            height: 21px;
+            font-size: 11;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    .nav-link {
+        color: $dark;
+        font-weight: 500;
+        &:hover {
+            color: $grey
+        }
+    }
+    .btn {
+        border: none;
+        color: white;
+    }
+}

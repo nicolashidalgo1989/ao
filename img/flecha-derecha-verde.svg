@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>flecha izquierda derecha</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-home---slider-1" transform="translate(-1279.000000, -289.000000)" fill="#166439">
+            <g id="flecha-izquierda-derecha" transform="translate(1279.000000, 288.000000)">
+                <path d="M2.57876297,10.7338256 L10.3276164,18.4826791 C10.6523256,18.8073883 10.6523256,19.3338459 10.3276164,19.6585551 C10.0029073,19.9832643 9.47644963,19.9832643 9.15174044,19.6585551 L0.920608359,11.427423 C0.81001914,11.3168338 0.737094315,11.1828429 0.701833887,11.0413906 C0.554806727,10.7325096 0.609146178,10.3516904 0.864852239,10.0959843 L9.09598432,1.86485224 C9.42069351,1.54014304 9.94715113,1.54014304 10.2718603,1.86485224 C10.5965695,2.18956143 10.5965695,2.71601906 10.2718603,3.04072825 L2.57876297,10.7338256 Z" id="Combined-Shape" transform="translate(5.596234, 10.761704) rotate(-180.000000) translate(-5.596234, -10.761704) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

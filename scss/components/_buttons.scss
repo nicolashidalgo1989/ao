@@ -1,0 +1,33 @@
+.btn {
+    &-success {
+        background-color: $green;
+        font-weight: 700;
+        border: none;
+        color: white;
+        padding: 17px;
+        width: 100%;
+        max-width: 250px;
+        font-size: 18px;
+        margin: 0 auto;
+        border-radius: 50px;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $white;
+            color: $green;
+        }
+    }
+}
+
+.btn-slide-down {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background: url('../../img/btn-scroll-banner.png') center top no-repeat white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .1);
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 999
+}

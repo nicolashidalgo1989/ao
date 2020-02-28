@@ -1,0 +1,20 @@
+.icons {
+    display: flex;
+    justify-content: space-around;
+    div {
+        width: 40%;
+        margin: 0px;
+        @include media(md) {
+            width: 16%;
+        }
+        img {
+            margin-bottom: 5px;
+            height: 45px;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            font-style: italic;
+        }
+    }
+}

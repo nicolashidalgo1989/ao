@@ -1,0 +1,125 @@
+.insta {
+    width: 95px;
+    height: 95px;
+    margin: 0 17.5px;
+    margin: 7.5px;
+    background: $dark;
+    border-radius: 30px;
+    @include media(md) {
+        width: 150px;
+        height: 150px;
+        margin: 17.5px;
+    }
+}
+
+.owl-carousel.productos {
+    @include media(md) {
+        display: flex;
+        transform: none!important;
+        max-width: 100%;
+    }
+    .owl-stage-outer {
+        @include media(md) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .media {
+        width: 100%;
+        max-width: 300px;
+        height: 265px;
+        border-radius: 30px;
+        background: black;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: stretch;
+        margin: 0 15px;
+        @include media(md) {
+            margin: 0 22.5px;
+            max-width: 450px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            z-index: 1;
+            background: rgba(0, 0, 0, .3);
+            @include media(md) {
+                padding: 20px 90px;
+            }
+            .text {
+                h4 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: white;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                }
+            }
+            button {
+                border-radius: 50px;
+                font-size: 14px;
+                font-weight: 700;
+                border: 2px solid white;
+                padding: 10px 0;
+                width: 100%;
+                max-width: 220px;
+                margin: 0 auto;
+            }
+        }
+        img {
+            position: absolute;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-stage-outer {
+        @include media(md) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .owl-item {
+        .producto {
+            width: 260px;
+            margin: 0 15px;
+            img {
+                width: auto;
+                margin: 20px auto;
+            }
+            h3 {
+                font-size: 18px;
+                color: $dark;
+                line-height: 0;
+            }
+            p {
+                font-size: 14px;
+            }
+            .btn {
+                padding: 14px;
+                width: 100%;
+                max-width: 160px;
+                font-size: 14px;
+            }
+        }
+    }
+}
