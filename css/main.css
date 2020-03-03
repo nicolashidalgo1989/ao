@@ -352,6 +352,15 @@ p {
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption p strong {
   font-weight: 700;
 }
+.hero .carousel-control-prev-icon {
+  background-image: url("../img/flecha-izquierda-blanca.svg");
+}
+.hero .carousel-control-next-icon {
+  background-image: url("../img/flecha-derecha-blanca.svg");
+}
+.hero .carousel-caption {
+  color: #efefef !important;
+}
 
 footer {
   background-image: linear-gradient(rgba(255, 255, 255, 0), white);
@@ -535,10 +544,26 @@ footer p {
   font-size: 18px;
   color: #4a4a4a;
   font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  border: 0;
+  width: 40%;
+  background: none;
+  text-align: center;
 }
-.counter span {
+.counter input::-webkit-outer-spin-button,
+.counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.counter button {
   cursor: pointer;
   font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  background: none;
+  text-align: center;
 }
 
 section {
@@ -583,7 +608,11 @@ section {
   background-color: #f6f6f6 !important;
   color: #4a4a4a !important;
   border-bottom: 1px solid #9a9a9a;
-  padding-top: 0.5rem !important;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .hero .navbar.sticky {
+    padding-top: 0.5rem !important;
+  }
 }
 .hero .navbar .navbar-toggler {
   padding: 0;
@@ -593,6 +622,7 @@ section {
   width: 24px;
   height: 2.4px;
   border-radius: 4px;
+  background: #0b0b0b;
 }
 .hero .navbar .navbar-toggler .navbar-toggler-icon:before, .hero .navbar .navbar-toggler .navbar-toggler-icon:after {
   content: "";
@@ -644,6 +674,21 @@ section {
   text-align: right;
   padding: 0 10px !important;
   color: inherit;
+}
+.hero .navbar-toggler .navbar-toggler-icon {
+  background: #0b0b0b;
+}
+.hero .navbar-toggler .navbar-toggler-icon:before, .hero .navbar-toggler .navbar-toggler-icon:after {
+  background: #0b0b0b;
+}
+.hero .navbar-brand {
+  background-image: url("../img/logo-ao-black.svg");
+}
+.hero .shopping-cart-btn {
+  background-image: url("../img/carrito-negro.svg");
+}
+.hero .nav-link {
+  color: #4a4a4a !important;
 }
 
 @media (min-width: 1023px) and (max-width: 1360px) {

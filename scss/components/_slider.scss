@@ -72,4 +72,13 @@
             }
         }
     }
+    .carousel-control-prev-icon {
+        background-image: url('../img/flecha-izquierda-blanca.svg');
+    }
+    .carousel-control-next-icon {
+        background-image: url('../img/flecha-derecha-blanca.svg');
+    }
+    .carousel-caption {
+        color: $white!important;
+    }
 }

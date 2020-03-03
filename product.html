@@ -29,12 +29,12 @@
                         
                     </button>
 
-                <a class="navbar-brand" href="#"></a>
+                <a class="navbar-brand" href="index.html"></a>
 
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-md-auto mr-md-5 pr-md-5 mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Historia</a>
@@ -70,10 +70,10 @@
                 <div class="col-md-5">
                     <div id="carousel" class="carousel slide product mt-md-5 pt-md-5" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active dark">
+                            <div class="carousel-item active">
                                 <img src="img/lata-img2.png" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item light">
+                            <div class="carousel-item">
                                 <img src="img/lata-img1.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -110,9 +110,9 @@
                             <h5 class="m-md-0 mr-md-3">Cantidad</h5>
 
                             <div class="counter badge active m-md-0">
-                                <span>-</span>
-                                <span class="qty">1</span>
-                                <span>+</span>
+                                <button type="button" class="add" id="add">-</button>
+                                <input class="qty" type="number" value="1">
+                                <button type="button" class="sub" id="sub">+</button>
                             </div>
                         </div>
 

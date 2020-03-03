@@ -46,7 +46,9 @@
             background-color: $bg-main!important;
             color: $grey!important;
             border-bottom: 1px solid $grey-light;
-            padding-top: 0.5rem!important;
+            @include media(md) {
+                padding-top: 0.5rem!important;
+            }
         }
         .navbar-toggler {
             padding: 0;
@@ -55,6 +57,7 @@
                 width: 24px;
                 height: 2.4px;
                 border-radius: 4px;
+                background: $dark;
                 &:before,
                 &:after {
                     content: "";
@@ -109,5 +112,23 @@
             padding: 0 10px!important;
             color: inherit
         }
+    }
+    .navbar-toggler {
+        .navbar-toggler-icon {
+            background: $dark;
+            &:before,
+            &:after {
+                background: $dark;
+            }
+        }
+    }
+    .navbar-brand {
+        background-image: url('../img/logo-ao-black.svg');
+    }
+    .shopping-cart-btn {
+        background-image: url('../img/carrito-negro.svg');
+    }
+    .nav-link {
+        color: $grey!important;
     }
 }
