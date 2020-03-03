@@ -34,7 +34,7 @@ h2 {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  background: url(/img/detalle-separacion.png) center top no-repeat transparent;
+  background: url(img/detalle-separacion.png) center top no-repeat transparent;
   padding-top: 25px;
 }
 
@@ -278,19 +278,19 @@ p {
 }
 
 .hero.is-dark .carousel-control-prev-icon {
-  background-image: url("/img/flecha-izquierda-blanca.png");
+  background-image: url("img/flecha-izquierda-blanca.png");
 }
 .hero.is-dark .carousel-control-next-icon {
-  background-image: url("/img/flecha-derecha-blanca.png");
+  background-image: url("img/flecha-derecha-blanca.png");
 }
 .hero.is-dark .carousel-caption {
   color: #efefef !important;
 }
 .hero.is-light .carousel-control-prev-icon {
-  background-image: url("/img/flecha-izquierda-verde.png");
+  background-image: url("img/flecha-izquierda-verde.png");
 }
 .hero.is-light .carousel-control-next-icon {
-  background-image: url("/img/flecha-derecha-verde.png");
+  background-image: url("img/flecha-derecha-verde.png");
 }
 .hero.is-light .carousel-caption {
   color: #4a4a4a !important;
@@ -552,10 +552,10 @@ section {
   background: white;
 }
 .hero.is-dark .navbar-brand {
-  background-image: url(/img/logo-ao-white.png);
+  background-image: url(img/logo-ao-white.png);
 }
 .hero.is-dark .shopping-cart-btn {
-  background-image: url(/img/carrito-blanco.png);
+  background-image: url(img/carrito-blanco.png);
 }
 .hero.is-dark .nav-link {
   color: white !important;
@@ -567,10 +567,10 @@ section {
   background: #0b0b0b;
 }
 .hero.is-light .navbar-brand {
-  background-image: url(/img/logo-ao-black.png);
+  background-image: url(img/logo-ao-black.png);
 }
 .hero.is-light .shopping-cart-btn {
-  background-image: url(/img/carrito-negro.png);
+  background-image: url(img/carrito-negro.png);
 }
 .hero.is-light .nav-link {
   color: #4a4a4a !important;
