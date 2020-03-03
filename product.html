@@ -16,16 +16,18 @@
 
 <body>
 
-    <div class="producto-detalle">
+    <div class="producto-detalle hero">
 
         <!-- Header -->
         <nav class="navbar fixed-top navbar-expand-lg pt-4">
 
             <div class="container-fluid">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">               
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                        <span class="navbar-toggler-icon"></span>
+                        
+                    </button>
 
                 <a class="navbar-brand" href="#"></a>
 
@@ -60,108 +62,116 @@
 
         </nav>
 
-        <div class="d-md-flex mt-md-3">
-            <!-- Slider Product-->
-            <div id="carousel" class="carousel slide product mt-md-5 pt-md-5" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/lata-img2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/lata-img1.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+        <div class="mt-md-3 container-fluid p-0">
 
-            <!-- Description -->
-            <div class="content container">
+            <div class="row">
 
-                <h4>Aceite de Oliva Arbequina Reserva</h4>
-                <p class="price mb-5">$ 5.990</p>
-
-                <div class="d-md-flex align-items-md-center mb-md-5">
-                    <h5 class="m-md-0 mr-md-3">Formato</h5>
-
-                    <div class="d-flex">
-                        <button class="badge active">250 ml</button>
-                        <button class="badge">500 ml</button>
-                        <button class="badge">5 lts</button>
-                    </div>
-                </div>
-
-                <div class="d-md-flex align-items-md-center justify-content-md-start mb-md-5">
-
-                    <h5 class="m-md-0 mr-md-3">Cantidad</h5>
-
-                    <div class="counter badge active m-md-0">
-                        <span>-</span>
-                        <span class="qty">1</span>
-                        <span>+</span>
-                    </div>
-                </div>
-
-                <button class="btn btn-success btn-block my-5 mx-md-0">Agregar al carro</button>
-
-                <h4>Descripción</h4>
-
-                <p class="description">
-                    Proveniente de un pequeño huerto escondido entre cerros en el Valle de Romeral y con una producción limitada, nuestro Arbequina Reserva, es cosechado a mano en su momento óptimo de maduración. Nos ofrece en nariz un aroma frutado y con matices asociados
-                    a notas herbáceas silvestres. En boca se percibe un sabor almendrado, se ratifican sus notas herbáceas y un toque de amargor final.
-                </p>
-
-                <div class="icons d-flex flex-wrap justify-content-md-start">
-                    <div class="text-center">
-                        <img src="img/icon-formato.png" alt="Formato">
-                        <p> <span>Formato</span> <strong>250 ml</strong></p>
-                    </div>
-                    <div class="text-center">
-                        <img src="img/icon-envase.png" alt="Envase">
-                        <p> <span>Envase</span> <strong>reutilizable</strong></p>
-                    </div>
-                    <div class="text-center">
-                        <img src="img/icon-prensado.png" alt="Prensado">
-                        <p> <span>Prensado</span> <strong>en frío</strong></p>
-                    </div>
-                    <div class="text-center">
-                        <img src="img/icon-acidez.png" alt="Acidez">
-                        <p> <span>Acidez máxima:</span> <strong>0,2%</strong></p>
-                    </div>
-                </div>
-
-                <h6>Origen, <strong>Valle de Romeral</strong> - Chile</h6>
-
-                <h4>Maridaje</h4>
-
-                <p class="description">Aprende cómo hacer la mejor combinación en tus comidas con nuestro aceite de oliva</p>
-
-                <div class="maridaje">
-
-                    <div class="item">
-                        <div class="item-icon">
-                            <img src="img/icon-ensalada.png" alt="Ensaladas">
+                <!-- Slider Product-->
+                <div class="col-md-5">
+                    <div id="carousel" class="carousel slide product mt-md-5 pt-md-5" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active dark">
+                                <img src="img/lata-img2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item light">
+                                <img src="img/lata-img1.png" class="d-block w-100" alt="...">
+                            </div>
                         </div>
-                        <h5>Ensaladas de todo tipo</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-
-                    <div class="item">
-                        <div class="item-icon">
-                            <img src="img/icon-pescado.png" alt="Pescado">
-                        </div>
-                        <h5>Recetas de pescados</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
                 </div>
 
+                <!-- Description -->
+                <div class="col-md-7">
+                    <div class="content container">
+
+                        <h4>Aceite de Oliva Arbequina Reserva</h4>
+                        <p class="price mb-5">$ 5.990</p>
+
+                        <div class="d-md-flex align-items-md-center mb-md-5">
+                            <h5 class="m-md-0 mr-md-3">Formato</h5>
+
+                            <div class="d-flex">
+                                <button class="badge active">250 ml</button>
+                                <button class="badge">500 ml</button>
+                                <button class="badge">5 lts</button>
+                            </div>
+                        </div>
+
+                        <div class="d-md-flex align-items-md-center justify-content-md-start mb-md-5">
+
+                            <h5 class="m-md-0 mr-md-3">Cantidad</h5>
+
+                            <div class="counter badge active m-md-0">
+                                <span>-</span>
+                                <span class="qty">1</span>
+                                <span>+</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-success btn-block my-5 mx-md-0">Agregar al carro</button>
+
+                        <h4>Descripción</h4>
+
+                        <p class="description">
+                            Proveniente de un pequeño huerto escondido entre cerros en el Valle de Romeral y con una producción limitada, nuestro Arbequina Reserva, es cosechado a mano en su momento óptimo de maduración. Nos ofrece en nariz un aroma frutado y con matices asociados
+                            a notas herbáceas silvestres. En boca se percibe un sabor almendrado, se ratifican sus notas herbáceas y un toque de amargor final.
+                        </p>
+
+                        <div class="icons d-flex flex-wrap justify-content-md-start">
+                            <div class="text-center">
+                                <img src="img/icon-formato.svg" alt="Formato">
+                                <p> <span>Formato</span> <strong>250 ml</strong></p>
+                            </div>
+                            <div class="text-center">
+                                <img src="img/icon-envase.svg" alt="Envase">
+                                <p> <span>Envase</span> <strong>reutilizable</strong></p>
+                            </div>
+                            <div class="text-center">
+                                <img src="img/icon-prensado.svg" alt="Prensado">
+                                <p> <span>Prensado</span> <strong>en frío</strong></p>
+                            </div>
+                            <div class="text-center">
+                                <img src="img/icon-acidez.svg" alt="Acidez">
+                                <p> <span>Acidez máxima:</span> <strong>0,2%</strong></p>
+                            </div>
+                        </div>
+
+                        <h6>Origen, <strong>Valle de Romeral</strong> - Chile</h6>
+
+                        <h4>Maridaje</h4>
+
+                        <p class="description">Aprende cómo hacer la mejor combinación en tus comidas con nuestro aceite de oliva</p>
+
+                        <div class="maridaje">
+
+                            <div class="item">
+                                <div class="item-icon">
+                                    <img src="img/icon-ensalada.svg" alt="Ensaladas">
+                                </div>
+                                <h5>Ensaladas de todo tipo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="item">
+                                <div class="item-icon">
+                                    <img src="img/icon-pescado.svg" alt="Pescado">
+                                </div>
+                                <h5>Recetas de pescados</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -196,7 +206,7 @@
 
                 <div class="footer-nav-column logo-footer ">
 
-                    <img src="img/Logo-AO-texto.png " src="AO Olive | Aceite de Oliva Extra Virgen ">
+                    <img src="img/Logo-AO-texto.svg" src="AO Olive | Aceite de Oliva Extra Virgen ">
 
                     <a href=" " class="link "> <span class="ig"></span> oliveao_cl</a>
 
@@ -226,11 +236,11 @@
 
     </div>
 
-    <script src="js/jquery-3.4.1.slim.min.js "></script>
+    <script src="js/jquery-3.4.1.min.js "></script>
     <script src="js/popper.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="js/owl.carousel.min.js "></script>
-    <script src="js/index.js "></script>
+    <script src="js/index.js"></script>
 
 </body>
 

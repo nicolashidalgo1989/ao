@@ -11,9 +11,9 @@
         height: 390px;
         margin-bottom: 10px;
         @include media(md) {
-            width: 690px;
-            height: 682px;
+            max-width: 530px;
             margin-right: 80px;
+            width: 100%;
         }
         .carousel-inner {
             border-radius: 0px 0px 30px 30px;
