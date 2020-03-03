@@ -16,89 +16,92 @@
 
 <body>
 
-    <!-- Header -->
-    <nav class="navbar fixed-top navbar-expand-lg pt-4">
+    <div class="hero is-light">
+        <!-- Header -->
+        <nav class="navbar fixed-top navbar-expand-lg pt-4">
 
-        <div class="container-fluid">
+            <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    
-                    <span class="navbar-toggler-icon"></span>
-                    
-                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                        <span class="navbar-toggler-icon"></span>
+                        
+                    </button>
 
-            <a class="navbar-brand" href="#"></a>
+                <a class="navbar-brand" href="#"></a>
 
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-md-auto mr-md-5 pr-md-5 mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Prensa & Premios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Puntos de venta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-md-auto mr-md-5 pr-md-5 mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prensa & Premios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Puntos de venta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="" class="shopping-cart-btn">
+                    <span class="cart-number sr-only">0</span>
+                </a>
+
             </div>
 
-            <a href="" class="shopping-cart-btn">
-                <img src="img/carrito-negro.svg">
-                <span class="cart-number sr-only">0</span>
+        </nav>
+
+        <!-- Slider -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+
+
+            <div class="carousel-inner h-100 d-flex align-items-center">
+                <div class="carousel-item active light">
+                    <img src="img/banner-1.png" alt="Banner 1" class="d-md-block d-none">
+                    <div class="pt-5 pt-md-0 carousel-caption align-items-center justify-content-around align-items-md-end justify-content-md-center">
+                        <h3 class="w-50 mr-3 d-md-block d-none">Tradición mediterránea </h3>
+                        <h3 class="w-100 d-md-none d-block">Tradición mediterránea </h3>
+                        <div>
+                            <p>Conoce nuestro formato <strong>clásico y único</strong> en Chile</p>
+                            <button class="btn btn-success">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item dark">
+                    <img src="img/banner-2.png" alt="Banner 2">
+                    <div class="pt-5 pt-md-0 carousel-caption col-md-6 mx-auto justify-content-around align-items-end align-items-md-center justify-content-md-center flex-row-column">
+                        <h3 class="font-weight-bold d-md-block d-none">Tonos frutales y frescura intensa </h3>
+                        <h3 class="font-weight-bold w-100 d-md-none d-block">Tonos frutales y frescura intensa </h3>
+                        <div class="d-md-flex justify-md-content-center align-md-items-center flex-md-column">
+                            <p>Nuestro <strong>Ensamblaje</strong> reúne los varietales Frantoio, Arbequina y Coratina </p>
+                            <button class="btn btn-success mt-2">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
 
+            <a href="" class="btn-slide-down d-none d-md-inline-block"></a>
+
         </div>
-
-    </nav>
-
-    <!-- Slider -->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-
-        <div class="carousel-inner h-100 d-flex align-items-center">
-            <div class="carousel-item active light">
-                <img src="img/banner-1.png" alt="Banner 1" class="d-md-block d-none">
-                <img src="img/lata-img1.png" alt="Banner 1" class="w-100 d-md-none d-block">
-                <div class="pt-5 pt-md-0 carousel-caption align-items-center justify-content-around align-items-md-end justify-content-md-center">
-                    <h3 class="w-50 mr-3 d-md-block d-none">Tradición mediterránea </h3>
-                    <h3 class="w-100 d-md-none d-block text-brown">Tradición mediterránea </h3>
-                    <div>
-                        <p>Conoce nuestro formato <strong>clásico y único</strong> en Chile</p>
-                        <button class="btn btn-success">¡Lo quiero!</button>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item  dark">
-                <img src="img/banner-2.png" alt="Banner 2">
-                <div class="pt-5 pt-md-0 carousel-caption col-md-6 mx-auto justify-content-around align-items-end align-items-md-center justify-content-md-center flex-row-column">
-                    <h3 class="font-weight-bold d-md-block d-none">Tonos frutales y frescura intensa </h3>
-                    <h3 class="font-weight-bold w-100 d-md-none d-block">Tonos frutales y frescura intensa </h3>
-                    <div class="d-md-flex justify-md-content-center align-md-items-center flex-md-column">
-                        <p>Nuestro <strong>Ensamblaje</strong> reúne los varietales Frantoio, Arbequina y Coratina </p>
-                        <button class="btn btn-success mt-2">¡Lo quiero!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-
     </div>
 
     <!-- Productos -->
@@ -249,8 +252,6 @@
         </footer>
 
     </div>
-
-    <a href="" class="btn-slide-down d-none d-md-block"></a>
 
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
