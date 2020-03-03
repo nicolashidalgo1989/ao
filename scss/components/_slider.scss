@@ -1,10 +1,10 @@
 .hero {
     &.is-dark {
         .carousel-control-prev-icon {
-            background-image: url('./img/flecha-izquierda-blanca.png');
+            background-image: url('/img/flecha-izquierda-blanca.png');
         }
         .carousel-control-next-icon {
-            background-image: url('./img/flecha-derecha-blanca.png');
+            background-image: url('/img/flecha-derecha-blanca.png');
         }
         .carousel-caption {
             color: $white!important;
@@ -12,10 +12,10 @@
     }
     &.is-light {
         .carousel-control-prev-icon {
-            background-image: url('./img/flecha-izquierda-verde.png');
+            background-image: url('/img/flecha-izquierda-verde.png');
         }
         .carousel-control-next-icon {
-            background-image: url('./img/flecha-derecha-verde.png');
+            background-image: url('/img/flecha-derecha-verde.png');
         }
         .carousel-caption {
             color: $grey!important;
