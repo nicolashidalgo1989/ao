@@ -1,0 +1,22 @@
+.historia {
+    @include media(md) {
+        text-align: center;
+        padding-top: 140px;
+        transition: padding-top .2s ease-in-out;
+    }
+    .navbar {
+        @include media(md) {
+            background: $bg-main;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0;
+        color: $grey;
+        text-align: left;
+    }
+    .banner {
+        background-image: url('../img/fondo-historia.png');
+    }
+}

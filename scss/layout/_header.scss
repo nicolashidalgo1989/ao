@@ -41,8 +41,8 @@
     }
     .navbar {
         background-color: transparent!important;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 55px;
+        padding-bottom: 55px;
         border: 1px solid transparent;
         transition: all .2s ease-in-out;
         &.sticky {
@@ -50,8 +50,8 @@
             color: $grey!important;
             border-bottom: 1px solid $grey-light;
             @include media(md) {
-                padding-top: 0.5rem!important;
-                padding-bottom: 0.5rem!important;
+                padding-top: 22px!important;
+                padding-bottom: 22px!important;
             }
         }
         .navbar-toggler {
@@ -80,7 +80,7 @@
         }
         .navbar-brand {
             width: 62px;
-            height: 60px;
+            height: 30px;
             margin: 0;
             background-repeat: no-repeat;
             background-position: center;
