@@ -602,7 +602,10 @@ section {
 }
 .hero .navbar {
   background-color: transparent !important;
-  transition: all 0.1s ease-in-out;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
 }
 .hero .navbar.sticky {
   background-color: #f6f6f6 !important;
@@ -612,6 +615,7 @@ section {
 @media (min-width: 1023px) and (max-width: 1360px) {
   .hero .navbar.sticky {
     padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
 }
 .hero .navbar .navbar-toggler {
@@ -694,6 +698,8 @@ section {
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle {
     text-align: left;
+    padding-top: 140px;
+    transition: padding-top 0.2s ease-in-out;
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -703,12 +709,21 @@ section {
 }
 .producto-detalle .carousel.slide.product {
   height: 390px;
-  margin-bottom: 10px;
+  position: fixed;
+  top: 140px;
+  transition: top 0.2s ease-in-out;
+}
+.producto-detalle .carousel.slide.product.at-footer {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+.producto-detalle .carousel.slide.product.sticky {
+  top: 78px;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .carousel.slide.product {
     max-width: 530px;
-    margin-right: 80px;
     width: 100%;
   }
 }
@@ -720,9 +735,12 @@ section {
     border-radius: 0;
   }
 }
+.producto-detalle .carousel.slide.product.sticky {
+  position: fixed;
+}
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .content {
-    margin-top: 140px;
+    margin-top: 50px;
   }
 }
 .producto-detalle .content .description {

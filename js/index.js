@@ -98,17 +98,65 @@ $('#carousel.carousel-home').on('slide.bs.carousel', function() {
 
 });
 
+// $(document).scroll(function() {
+//     checkOffset();
+// });
+
 $(window).scroll(function() {
 
     var header = $('.navbar');
     var scroll = $(window).scrollTop();
+    var pageProduct = $('.producto-detalle');
 
-    if (scroll >= 200) {
+    if (scroll >= 65) {
         header.addClass("sticky");
+        $('#carousel.product').addClass('sticky');
+        pageProduct.css('padding-top', '78px');
     } else {
         header.removeClass("sticky");
+        $('#carousel.product').removeClass('sticky');
+        pageProduct.css('padding-top', '140px');
     }
 
+});
+
+// function checkOffset() {
+//     var offsetFooter = $('#footer').offset().top;
+//     console.log(offsetFooter);
+
+//     if ($('#carousel.product').offset().top + $('#carousel.product').height() >= offsetFooter - 10) {
+
+//         $('#carousel.product').addClass('at-footer');
+
+//     }
+
+//     if ($(document).scrollTop() + window.innerHeight < offsetFooter) {
+
+//         $('#carousel.product').removeClass('at-footer');
+
+//     }
+
+// }
+
+var socialFloat = document.querySelector('#carousel.product');
+var footer = document.querySelector('#footer');
+
+function checkOffset() {
+    function getRectTop(el) {
+        var rect = el.getBoundingClientRect();
+        return rect.top;
+    }
+
+    if ((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
+        socialFloat.style.position = 'absolute';
+    if (document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+        socialFloat.style.position = 'fixed'; // restore when you scroll up
+
+    //socialFloat.innerHTML = document.body.scrollTop + window.innerHeight;
+}
+
+document.addEventListener("scroll", function() {
+    checkOffset();
 });
 
 $(".btn-slide-down").on('click', function(event) {

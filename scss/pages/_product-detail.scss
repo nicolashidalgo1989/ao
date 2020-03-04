@@ -1,6 +1,8 @@
 .producto-detalle {
     @include media(md) {
         text-align: left;
+        padding-top: 140px;
+        transition: padding-top .2s ease-in-out;
     }
     .navbar {
         @include media(md) {
@@ -9,10 +11,19 @@
     }
     .carousel.slide.product {
         height: 390px;
-        margin-bottom: 10px;
+        position: fixed;
+        top: 140px;
+        transition: top .2s ease-in-out;
+        &.at-footer {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+        }
+        &.sticky {
+            top: 78px;
+        }
         @include media(md) {
             max-width: 530px;
-            margin-right: 80px;
             width: 100%;
         }
         .carousel-inner {
@@ -21,10 +32,13 @@
                 border-radius: 0;
             }
         }
+        &.sticky {
+            position: fixed;
+        }
     }
     .content {
         @include media(md) {
-            margin-top: 140px;
+            margin-top: 50px;
         }
         .description {
             font-size: 17px;
