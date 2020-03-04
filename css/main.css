@@ -30,20 +30,6 @@ h1 small {
   font-weight: 400;
 }
 
-h1.title-banner {
-  font-family: "Playfair Display";
-  font-size: 50px;
-  line-height: 60px;
-  letter-spacing: 1.3px;
-  width: 100%;
-  color: #4a4a4a;
-  font-weight: 400;
-  max-width: 1000px;
-  margin-bottom: 50px;
-  background: url(../img/detalle-separacion.svg) center bottom no-repeat transparent;
-  padding-bottom: 70px;
-}
-
 h2 {
   font-size: 18px;
   text-transform: uppercase;
@@ -94,16 +80,6 @@ p {
   margin-bottom: 30px;
 }
 
-blockquote {
-  font-family: "Playfair Display";
-  font-style: italic;
-  font-size: 30px;
-  letter-spacing: 0.5px;
-  color: #4a4a4a;
-  margin: 0;
-  padding: 0;
-}
-
 .font-size-20 {
   font-size: 20px;
 }
@@ -119,6 +95,37 @@ blockquote {
 
 .text-brown {
   color: #655536;
+}
+
+.banner h1.title-banner {
+  font-family: "Playfair Display";
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 1.3px;
+  width: 100%;
+  color: #4a4a4a;
+  font-weight: 400;
+  max-width: 1000px;
+  margin-bottom: 15px;
+  background: url(../img/detalle-separacion.svg) center bottom no-repeat transparent;
+  padding-bottom: 70px;
+}
+.banner p {
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0;
+  margin: 0;
+  font-weight: 500;
+  text-align: center !important;
+}
+.banner blockquote {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  color: #4a4a4a;
+  margin: 50px 0 0;
+  padding: 0;
 }
 
 .btn-success {
@@ -169,19 +176,19 @@ blockquote {
 }
 
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .owl-carousel.productos {
+  .home .owl-carousel.productos {
     display: flex;
     transform: none !important;
     max-width: 100%;
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .owl-carousel.productos .owl-stage-outer {
+  .home .owl-carousel.productos .owl-stage-outer {
     display: flex;
     justify-content: center;
   }
 }
-.owl-carousel.productos .media {
+.home .owl-carousel.productos .media {
   width: 100%;
   max-width: 300px;
   height: 265px;
@@ -195,12 +202,12 @@ blockquote {
   margin: 0 15px;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .owl-carousel.productos .media {
+  .home .owl-carousel.productos .media {
     margin: 0 22.5px;
     max-width: 450px;
   }
 }
-.owl-carousel.productos .media .content {
+.home .owl-carousel.productos .media .content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -213,21 +220,21 @@ blockquote {
   background: rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .owl-carousel.productos .media .content {
+  .home .owl-carousel.productos .media .content {
     padding: 20px 90px;
   }
 }
-.owl-carousel.productos .media .content .text h4 {
+.home .owl-carousel.productos .media .content .text h4 {
   font-size: 30px;
   font-weight: 700;
   color: white;
 }
-.owl-carousel.productos .media .content .text p {
+.home .owl-carousel.productos .media .content .text p {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
 }
-.owl-carousel.productos .media .content .btn {
+.home .owl-carousel.productos .media .content .btn {
   border-radius: 50px;
   font-size: 14px;
   font-weight: 700;
@@ -237,7 +244,7 @@ blockquote {
   max-width: 220px;
   margin: 0 auto;
 }
-.owl-carousel.productos .media img {
+.home .owl-carousel.productos .media img {
   position: absolute;
   object-fit: cover;
   margin: 0;
@@ -247,31 +254,30 @@ blockquote {
   top: 0;
   left: 0;
 }
-
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .owl-carousel .owl-stage-outer {
+  .home .owl-carousel .owl-stage-outer {
     display: flex;
     justify-content: center;
     width: 100%;
   }
 }
-.owl-carousel .owl-item .producto {
+.home .owl-carousel .owl-item .producto {
   width: 260px;
   margin: 0 15px;
 }
-.owl-carousel .owl-item .producto img {
+.home .owl-carousel .owl-item .producto img {
   width: auto;
   margin: 20px auto;
 }
-.owl-carousel .owl-item .producto h3 {
+.home .owl-carousel .owl-item .producto h3 {
   font-size: 18px;
   color: #0b0b0b;
   line-height: 0;
 }
-.owl-carousel .owl-item .producto p {
+.home .owl-carousel .owl-item .producto p {
   font-size: 14px;
 }
-.owl-carousel .owl-item .producto .btn {
+.home .owl-carousel .owl-item .producto .btn {
   padding: 14px;
   width: 100%;
   max-width: 160px;
@@ -474,16 +480,19 @@ footer p {
     align-items: center;
   }
 }
-.contacto h2 {
+.contacto .contacto-title {
   text-transform: none;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .contacto h2 {
+  .contacto .contacto-title {
+    font-size: 18px;
     background: none;
     line-height: 25px;
     text-align: left;
     padding: 0;
     margin: 0;
+    letter-spacing: 0;
+    font-family: "Montserrat";
   }
 }
 .contacto h4 {
@@ -635,12 +644,8 @@ section {
   background-color: #f6f6f6 !important;
   color: #4a4a4a !important;
   border-bottom: 1px solid #9a9a9a;
-}
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .hero .navbar.sticky {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
-  }
+  padding-top: 22px !important;
+  padding-bottom: 22px !important;
 }
 .hero .navbar .navbar-toggler {
   padding: 0;
@@ -779,6 +784,41 @@ section {
   background-image: url("../img/fondo-historia.png");
 }
 
+.prensa-y-premios {
+  background-image: url("../img/fondo-historia.png");
+  background-position: center 140px;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .prensa-y-premios {
+    text-align: center;
+    padding-top: 140px;
+    transition: padding-top 0.2s ease-in-out;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .prensa-y-premios .navbar {
+    background: #f6f6f6;
+  }
+}
+.prensa-y-premios h2 {
+  font-size: 30px;
+  text-transform: none;
+  margin-bottom: 15px;
+  background: none;
+  padding-top: 25px;
+  letter-spacing: 0.5;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  color: #4a4a4a;
+  text-align: left;
+}
+.prensa-y-premios p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: #4a4a4a;
+  text-align: left;
+}
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle {
     text-align: left;

@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+    $('.owl-carousel.premios').owlCarousel({
+        loop: true,
+        margin: 35,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+
     $('.owl-carousel.productos').owlCarousel({
 
         margin: 0,
@@ -114,27 +135,6 @@ $(window).scroll(function() {
         pageProduct.css('padding-top', '140px');
     }
 
-});
-
-var slideProduct = document.querySelector('#carousel.product');
-var footer = document.querySelector('#footer');
-
-function checkOffset() {
-    function getRectTop(el) {
-        var rect = el.getBoundingClientRect();
-        return rect.top;
-    }
-
-    if ((getRectTop(slideProduct) + document.body.scrollTop) + slideProduct.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
-        slideProduct.style.position = 'absolute';
-    if (document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
-        slideProduct.style.position = 'fixed'; // restore when you scroll up
-
-    //slideProduct.innerHTML = document.body.scrollTop + window.innerHeight;
-}
-
-document.addEventListener("scroll", function() {
-    checkOffset();
 });
 
 $(".btn-slide-down").on('click', function(event) {

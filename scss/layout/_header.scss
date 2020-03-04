@@ -49,10 +49,8 @@
             background-color: $bg-main!important;
             color: $grey!important;
             border-bottom: 1px solid $grey-light;
-            @include media(md) {
-                padding-top: 22px!important;
-                padding-bottom: 22px!important;
-            }
+            padding-top: 22px!important;
+            padding-bottom: 22px!important;
         }
         .navbar-toggler {
             padding: 0;

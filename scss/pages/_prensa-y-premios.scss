@@ -1,0 +1,36 @@
+.prensa-y-premios {
+    background-image: url('../img/fondo-historia.png');
+    background-position: center 140px;
+    @include media(md) {
+        text-align: center;
+        padding-top: 140px;
+        transition: padding-top .2s ease-in-out;
+    }
+    .navbar {
+        @include media(md) {
+            background: $bg-main;
+        }
+    }
+    h2 {
+        font-size: 30px;
+        text-transform: none;
+        margin-bottom: 15px;
+        background: none;
+        padding-top: 25px;
+        letter-spacing: 0.5;
+        font-weight: 400;
+        font-family: $font-title;
+        color: $grey;
+        text-align: left;
+    }
+    p {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0;
+        color: $grey;
+        text-align: left;
+    }
+    .owl-carousel.premios {
+        .owl-item {}
+    }
+}

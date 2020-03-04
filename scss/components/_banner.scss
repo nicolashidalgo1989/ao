@@ -1,0 +1,32 @@
+.banner {
+    h1.title-banner {
+        font-family: "Playfair Display";
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 1.3px;
+        width: 100%;
+        color: $grey;
+        font-weight: 400;
+        max-width: 1000px;
+        margin-bottom: 15px;
+        background: url(../img/detalle-separacion.svg) center bottom no-repeat transparent;
+        padding-bottom: 70px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0;
+        font-weight: 500;
+        text-align: center!important;
+    }
+    blockquote {
+        font-family: $font-title;
+        font-style: italic;
+        font-size: 30px;
+        letter-spacing: .5px;
+        color: $grey;
+        margin: 50px 0 0;
+        padding: 0;
+    }
+}
