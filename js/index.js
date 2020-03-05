@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('.owl-carousel.premios').owlCarousel({
         loop: true,
-        margin: 35,
+        margin: 190,
         responsiveClass: true,
         responsive: {
             0: {
@@ -14,11 +14,13 @@ $(document).ready(function() {
                 nav: false
             },
             1000: {
-                items: 3,
+                items: 4,
                 nav: true,
                 loop: false
             }
+
         }
+
     });
 
     $('.owl-carousel.productos').owlCarousel({

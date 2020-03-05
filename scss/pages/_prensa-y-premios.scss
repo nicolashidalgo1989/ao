@@ -31,6 +31,36 @@
         text-align: left;
     }
     .owl-carousel.premios {
-        .owl-item {}
+        .owl-nav {
+            position: absolute;
+            right: 0;
+            top: -100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button {
+                display: inline-block;
+                width: 55px;
+                height: 55px;
+                border: 1px solid $green;
+                color: $green;
+                border-radius: 50px;
+                margin: 10px;
+                font-size: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    color: $green;
+                }
+                &:hover {
+                    background: $green;
+                    color: white;
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 }
