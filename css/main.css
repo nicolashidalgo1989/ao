@@ -161,10 +161,73 @@ p {
 
 .card {
   border-radius: 30px;
-  width: 300px;
+  width: 300px !important;
   height: 450px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
   background: #fff;
+  overflow: hidden;
+  margin: 0 60px 0 0;
+}
+.card .card-img-container {
+  height: 50%;
+  width: 100%;
+  background: black;
+  color: white;
+  position: relative;
+  margin: 0 0 24px;
+}
+.card .card-img-container .card-img-top {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.card .card-img-container .card-title-img {
+  font-family: "Playfair Display";
+  position: absolute;
+  color: white;
+  top: 40px;
+  font-size: 30px;
+  z-index: 1;
+  letter-spacing: 0.83px;
+  line-height: 40px;
+}
+.card .card-img-container .medalla {
+  position: absolute;
+  top: 126px;
+  left: 10px;
+  z-index: 2;
+  width: 142px;
+  height: 142px;
+  display: block;
+}
+.card .card-body {
+  padding: 0;
+}
+.card .card-body h4 {
+  color: #166439;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  margin: 0 0 5px;
+}
+.card .card-body .card-title {
+  margin: 0 0 5px;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  font-family: "Playfair Display";
+}
+.card .card-body .card-text {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 0 1.25rem;
 }
 
 .insta {
@@ -827,15 +890,20 @@ section {
   color: #4a4a4a;
   text-align: left;
 }
-.prensa-y-premios .owl-carousel.premios .owl-nav {
-  position: absolute;
-  right: 0;
-  top: -100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.prensa-y-premios .slick-slider {
+  position: relative;
 }
-.prensa-y-premios .owl-carousel.premios .owl-nav button {
+.prensa-y-premios .slick-slider div {
+  transition: none;
+}
+.prensa-y-premios .slick-slider .slick-list {
+  padding: 0;
+}
+.prensa-y-premios .slick-slider .slick-arrow {
+  top: -100px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
   width: 55px;
   height: 55px;
@@ -843,20 +911,28 @@ section {
   color: #166439;
   border-radius: 50px;
   margin: 10px;
-  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
 }
-.prensa-y-premios .owl-carousel.premios .owl-nav button span {
-  color: #166439;
+.prensa-y-premios .slick-slider .slick-arrow.prev {
+  right: 70px;
+  background-image: url(../../img/flecha-izquierda-verde.svg);
 }
-.prensa-y-premios .owl-carousel.premios .owl-nav button:hover {
-  background: #166439;
-  color: white;
+.prensa-y-premios .slick-slider .slick-arrow.prev:hover {
+  background-image: url(../../img/flecha-izquierda-blanca.svg);
 }
-.prensa-y-premios .owl-carousel.premios .owl-nav button:hover span {
-  color: white;
+.prensa-y-premios .slick-slider .slick-arrow.next {
+  right: 0px;
+  background-image: url(../../img/flecha-derecha-verde.svg);
+}
+.prensa-y-premios .slick-slider .slick-arrow.next:hover {
+  background-image: url(../../img/flecha-derecha-blanca.svg);
+}
+.prensa-y-premios .slick-slider .slick-arrow:hover {
+  background-color: #166439;
 }
 
 @media (min-width: 1023px) and (max-width: 1360px) {

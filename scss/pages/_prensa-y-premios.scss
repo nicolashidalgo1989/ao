@@ -30,36 +30,47 @@
         color: $grey;
         text-align: left;
     }
-    .owl-carousel.premios {
-        .owl-nav {
-            position: absolute;
-            right: 0;
+    .slick-slider {
+        div {
+            transition: none;
+        }
+        position: relative;
+        .slick-list {
+            padding: 0;
+        }
+        .slick-arrow {
+            &.prev {
+                right: 70px;
+                background-image: url(../../img/flecha-izquierda-verde.svg);
+                &:hover {
+                    background-image: url(../../img/flecha-izquierda-blanca.svg);
+                }
+            }
+            &.next {
+                right: 0px;
+                background-image: url(../../img/flecha-derecha-verde.svg);
+                &:hover {
+                    background-image: url(../../img/flecha-derecha-blanca.svg);
+                }
+            }
             top: -100px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            border: 1px solid $green;
+            color: $green;
+            border-radius: 50px;
+            margin: 10px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            button {
-                display: inline-block;
-                width: 55px;
-                height: 55px;
-                border: 1px solid $green;
-                color: $green;
-                border-radius: 50px;
-                margin: 10px;
-                font-size: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                span {
-                    color: $green;
-                }
-                &:hover {
-                    background: $green;
-                    color: white;
-                    span {
-                        color: white;
-                    }
-                }
+            justify-content: center;
+            background-color: white;
+            transition: all .2s ease-in-out;
+            &:hover {
+                background-color: $green;
             }
         }
     }
