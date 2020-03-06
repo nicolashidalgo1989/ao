@@ -1,6 +1,7 @@
 .prensa-y-premios {
-    background-image: url('../img/fondo-historia.png');
+    background-repeat: no-repeat;
     background-position: center 140px;
+    background-color: $bg-main;
     @include media(md) {
         text-align: center;
         padding-top: 140px;
@@ -10,6 +11,9 @@
         @include media(md) {
             background: $bg-main;
         }
+    }
+    .banner {
+        background-image: url('../../img/fondo-historia.png');
     }
     h2 {
         font-size: 30px;
@@ -30,47 +34,51 @@
         color: $grey;
         text-align: left;
     }
-    .slick-slider {
-        div {
-            transition: none;
-        }
-        position: relative;
-        .slick-list {
-            padding: 0;
-        }
-        .slick-arrow {
-            &.prev {
-                right: 70px;
-                background-image: url(../../img/flecha-izquierda-verde.svg);
-                &:hover {
-                    background-image: url(../../img/flecha-izquierda-blanca.svg);
-                }
+    .premios,
+    .prensa {
+        background-color: $bg-main;
+        &.slick-slider {
+            div {
+                transition: none;
             }
-            &.next {
-                right: 0px;
-                background-image: url(../../img/flecha-derecha-verde.svg);
-                &:hover {
-                    background-image: url(../../img/flecha-derecha-blanca.svg);
-                }
+            position: relative;
+            .slick-list {
+                padding: 0 0 20px 0;
             }
-            top: -100px;
-            position: absolute;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: inline-block;
-            width: 55px;
-            height: 55px;
-            border: 1px solid $green;
-            color: $green;
-            border-radius: 50px;
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            transition: all .2s ease-in-out;
-            &:hover {
-                background-color: $green;
+            .slick-arrow {
+                &.prev {
+                    right: 150px;
+                    background-image: url(../../img/flecha-izquierda-verde.svg);
+                    &:hover {
+                        background-image: url(../../img/flecha-izquierda-blanca.svg);
+                    }
+                }
+                &.next {
+                    right: 80px;
+                    background-image: url(../../img/flecha-derecha-verde.svg);
+                    &:hover {
+                        background-image: url(../../img/flecha-derecha-blanca.svg);
+                    }
+                }
+                top: -100px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+                width: 55px;
+                height: 55px;
+                border: 1px solid $green;
+                color: $green;
+                border-radius: 50px;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background-color: $green;
+                }
             }
         }
     }

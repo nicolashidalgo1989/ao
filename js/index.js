@@ -1,12 +1,64 @@
 $(document).ready(function() {
 
-    $('.responsive').slick({
+    $('.premios').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        //centerPadding: '15px',
         prevArrow: '<button type="button" class="slick-arrow prev"></button>',
         nextArrow: '<button type="button" class="slick-arrow next"></button>'
+    });
+
+    $('.prensa').slick({
+        arrows: false,
+        draggable: false,
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
+
+    $('.productos-carousel').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 608,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+
+    $('.aceites-carousel').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 608,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
     });
 
     $('.owl-carousel.productos').owlCarousel({

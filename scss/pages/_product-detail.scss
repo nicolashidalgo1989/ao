@@ -92,4 +92,54 @@
             }
         }
     }
+    .badge {
+        border: 2px solid $grey-light;
+        border-radius: 22px;
+        color: $grey;
+        font-size: 14px;
+        min-width: 80px;
+        width: 100%;
+        height: 45px;
+        font-weight: 500;
+        padding: 10px 0;
+        margin: 5px;
+        &.active {
+            border: 2px solid $green;
+            color: $green;
+            font-weight: 600;
+        }
+    }
+    .counter {
+        width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30px;
+        .qty {
+            font-size: 18px;
+            color: $grey;
+            font-weight: 600;
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            border: 0;
+            width: 40%;
+            background: none;
+            text-align: center;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        button {
+            cursor: pointer;
+            font-weight: 400;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: 0;
+            background: none;
+            text-align: center;
+        }
+    }
 }

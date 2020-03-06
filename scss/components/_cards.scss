@@ -33,6 +33,14 @@
             letter-spacing: 0.83px;
             line-height: 40px;
         }
+        &.d-flex {
+            justify-content: center;
+            align-items: center;
+            .card-title-img {
+                position: static;
+                margin: 0;
+            }
+        }
         .medalla {
             position: absolute;
             top: 126px;
