@@ -1,17 +1,17 @@
 body {
-    font-family: 'Montserrat';
+    font-family: $font-text;
     font-weight: 400;
     color: $grey;
     text-align: center;
     background-color: $bg-main;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
+    font-size: $base-size;
 }
 
 a {
     color: $dark;
-    transition: color .3s ease-in-out;
+    @include transition(color .3s ease-in-out);
     &:hover {
         color: $grey;
     }

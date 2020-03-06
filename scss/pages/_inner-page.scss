@@ -3,7 +3,7 @@
     @include media(md) {
         text-align: center;
         padding-top: 140px;
-        transition: padding-top .2s ease-in-out;
+        @include transition(padding-top .2s ease-in-out);
     }
     .navbar {
         @include media(md) {
@@ -22,7 +22,7 @@
         background-repeat: no-repeat;
         background-position: center 140px;
         background-size: 100%;
-        opacity: 0.15;
+        @include opacity(0.15);
         z-index: -2;
         @include media(md) {
             background-position: center 140px;
@@ -38,25 +38,25 @@
         left: 0;
         object-fit: contain;
         background: linear-gradient( rgba(255, 255, 255, 0) 0%, $bg-main 40%);
-        opacity: 1;
+        @include opacity(1);
         z-index: -1;
     }
     h2 {
         font-family: $font-title;
-        font-size: 30px;
         letter-spacing: 0.5px;
         text-align: left;
         padding: 0;
         margin: 0 0 30px;
         text-transform: none;
         background: none!important;
+        @include font-size(30px);
     }
     p {
-        font-size: 18px;
         line-height: 25px;
         letter-spacing: 0;
         color: $grey;
         text-align: left;
+        @include font-size(18px);
     }
     form {
         width: 100%;

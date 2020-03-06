@@ -2,7 +2,7 @@
     &:before {
         object-fit: cover;
         background-image: url("../img/fondo-distribuir.png");
-        opacity: 0.05!important;
+        @include opacity(0.05);
         @include media(md) {
             background-position: center -200px!important;
         }
@@ -20,7 +20,7 @@
             width: 100%;
             position: relative;
             div {
-                transition: none;
+                @include transition(none);
             }
             .slick-list {
                 padding: 0 0 20px 0;
@@ -61,7 +61,7 @@
                 align-items: center;
                 justify-content: center;
                 background-color: white;
-                transition: all .2s ease-in-out;
+                @include transition(all .2s ease-in-out);
                 &:hover {
                     background-color: $green;
                 }

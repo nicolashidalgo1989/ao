@@ -53,19 +53,19 @@
                     }
                     h3 {
                         @include media(md) {
-                            font-size: 60px;
                             line-height: 70px;
                             letter-spacing: 1.3px;
                             font-weight: 400;
+                            @include font-size(60px);
                         }
                     }
                     p {
                         font-weight: 500;
-                        font-size: 18px;
                         line-height: 25px;
                         letter-spacing: 0;
+                        @include font-size(18px);
                         @include media(md) {
-                            font-size: 20px;
+                            @include font-size(20px);
                         }
                         strong {
                             font-weight: 700

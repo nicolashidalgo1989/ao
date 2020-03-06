@@ -1,6 +1,6 @@
 .historia {
     &:before {
         background: url("../img/fondo-historia.png");
-        opacity: 1!important;
+        @include opacity(1);
     }
 }

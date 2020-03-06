@@ -1,7 +1,7 @@
 .distribuir {
     &:before {
         background-image: url("../img/fondo-distribuir.png");
-        opacity: 0.05;
+        @include opacity(0.05);
         @include media(md) {
             background-position: center -200px;
         }

@@ -4,13 +4,13 @@ form {
         margin-bottom: 20px;
         label {
             color: $light;
-            font-size: 14px;
             position: absolute;
             top: 0;
             left: 0;
             padding: 15px 30px;
             width: 100%;
             text-align: left;
+            @include font-size(14px);
         }
         .form-control {
             border-radius: 25px;
@@ -32,11 +32,11 @@ form {
         display: block;
         margin: 10px auto!important;
         padding: 20px;
-        font-size: 18px;
         height: 60px;
         max-width: 300px;
         border-radius: 30px;
         font-weight: 600;
+        @include font-size(18px);
         @include media(md) {
             margin: 10px 0!important;
         }

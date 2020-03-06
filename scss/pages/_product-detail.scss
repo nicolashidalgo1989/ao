@@ -11,7 +11,7 @@
     .carousel.slide.product {
         height: 390px;
         margin-bottom: 10px;
-        transition: top .2s ease-in-out;
+        @include transition(top .2s ease-in-out);
         @include media(md) {
             position: fixed;
             top: 140px;
@@ -49,13 +49,21 @@
             margin-top: 50px;
         }
         .description {
-            font-size: 17px;
             line-height: 25px;
             letter-spacing: 0;
             color: $grey;
+            @include font-size(18px);
             @include media(md) {
                 width: 69%;
             }
+        }
+        .price {
+            font-family: $font-title;
+            font-weight: 900;
+            @include font-size(40px);
+            color: $brown;
+            letter-spacing: 0.7px;
+            margin: 10px 0 30px!important;
         }
         .maridaje {
             display: flex;
@@ -88,14 +96,14 @@
                     font-family: "Playfair Display";
                     font-weight: 600;
                     text-transform: none;
-                    font-size: 18px;
                     letter-spacing: 0.5px;
                     color: $grey;
                     margin: 0 0 10px 0;
+                    @include font-size(18px);
                 }
                 p {
                     font-weight: 500;
-                    font-size: 14px;
+                    @include font-size(14px);
                 }
             }
         }
@@ -103,13 +111,13 @@
             border: 2px solid $grey-light;
             border-radius: 22px;
             color: $grey;
-            font-size: 14px;
             min-width: 80px;
             width: 100%;
             height: 45px;
             font-weight: 500;
             padding: 10px 0;
             margin: 5px;
+            @include font-size(14px);
             &.active {
                 border: 2px solid $green;
                 color: $green;
@@ -122,9 +130,8 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            font-size: 30px;
+            @include font-size(30px);
             .qty {
-                font-size: 18px;
                 color: $grey;
                 font-weight: 600;
                 -webkit-appearance: none;
@@ -133,6 +140,7 @@
                 width: 40%;
                 background: none;
                 text-align: center;
+                @include font-size(18px);
             }
             input::-webkit-outer-spin-button,
             input::-webkit-inner-spin-button {

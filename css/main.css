@@ -6,11 +6,15 @@ body {
   background-color: #f6f6f6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
   color: #0b0b0b;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 a:hover {
@@ -19,19 +23,20 @@ a:hover {
 
 h1 {
   font-family: "Playfair Display";
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 900;
   max-width: 150px;
   width: 100%;
   color: #0b0b0b;
 }
 h1 small {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: uppercase;
   margin-bottom: 15px;
   background: url(../img/detalle-separacion.svg) center top no-repeat transparent;
@@ -42,7 +47,7 @@ h3 {
   font-family: "Playfair Display";
   font-weight: 700;
   text-transform: none;
-  font-size: 38px;
+  font-size: 2.375rem;
   letter-spacing: 0.7px;
   line-height: 45px;
   margin-bottom: 15px;
@@ -52,14 +57,14 @@ h4 {
   font-family: "Playfair Display";
   font-weight: 400;
   text-transform: none;
-  font-size: 28px;
+  font-size: 1.75rem;
   letter-spacing: 0.5px;
   color: #0b0b0b;
   margin-bottom: 15px;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   h4 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -70,6 +75,7 @@ h5 {
 
 h6 {
   font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   color: #4a4a4a;
   letter-spacing: 0;
@@ -82,15 +88,7 @@ p {
 
 .font-size-20 {
   font-size: 20px;
-}
-
-.price {
-  font-family: "Playfair Display";
-  font-weight: 900;
-  font-size: 40px;
-  color: #655536;
-  letter-spacing: 0.7px;
-  margin: 10px 0 30px !important;
+  font-size: 1.25rem;
 }
 
 .text-brown {
@@ -107,7 +105,6 @@ p {
 }
 .banner h1.title-banner {
   font-family: "Playfair Display";
-  font-size: 50px;
   line-height: 60px;
   letter-spacing: 1.3px;
   width: 100%;
@@ -117,23 +114,27 @@ p {
   margin-bottom: 15px;
   background: url(../img/detalle-separacion.svg) center bottom no-repeat transparent;
   padding-bottom: 70px;
+  font-size: 50px;
+  font-size: 3.125rem;
 }
 .banner p {
-  font-size: 20px;
   line-height: 35px;
   letter-spacing: 0;
   margin: 0;
   font-weight: 500;
   text-align: center !important;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 .banner blockquote {
   font-family: "Playfair Display";
   font-style: italic;
-  font-size: 30px;
   letter-spacing: 0.5px;
   color: #4a4a4a;
   margin: 50px 0 0;
   padding: 0;
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .btn-success {
@@ -144,9 +145,14 @@ p {
   padding: 17px;
   width: 100%;
   max-width: 250px;
-  font-size: 18px;
   margin: 0 auto;
   border-radius: 50px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .btn-success:hover {
@@ -199,10 +205,11 @@ p {
   position: absolute;
   color: white;
   top: 40px;
-  font-size: 30px;
   z-index: 1;
   letter-spacing: 0.83px;
   line-height: 40px;
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 .card .card-img-container.d-flex {
   justify-content: center;
@@ -226,24 +233,27 @@ p {
 }
 .card .card-body h4 {
   color: #166439;
-  font-size: 14px;
   font-weight: 600;
   font-family: "Montserrat";
   margin: 0 0 5px;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .card .card-body .card-title {
   margin: 0 0 5px;
-  font-size: 30px;
   letter-spacing: 0.5px;
   font-family: "Playfair Display";
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 .card .card-body .card-text {
   font-family: "Montserrat";
-  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0;
   text-align: center;
   padding: 0 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .insta {
@@ -313,23 +323,26 @@ p {
 }
 .home .productos-carousel .media .content .text h4 {
   font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   color: white;
 }
 .home .productos-carousel .media .content .text p {
-  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .home .productos-carousel .media .content .btn {
   border-radius: 50px;
-  font-size: 14px;
   font-weight: 700;
   border: 2px solid white;
   padding: 10px 0;
   width: 100%;
   max-width: 220px;
   margin: 0 auto;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .home .productos-carousel .media img {
   position: absolute;
@@ -350,18 +363,21 @@ p {
   margin: 20px auto;
 }
 .home .producto h3 {
-  font-size: 18px;
   color: #0b0b0b;
   line-height: 0;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .home .producto p {
   font-size: 14px;
+  font-size: 0.875rem;
 }
 .home .producto .btn {
   padding: 14px;
   width: 100%;
   max-width: 160px;
   font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .icons {
@@ -393,13 +409,14 @@ form .form-group {
 }
 form .form-group label {
   color: silver;
-  font-size: 14px;
   position: absolute;
   top: 0;
   left: 0;
   padding: 15px 30px;
   width: 100%;
   text-align: left;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 form .form-group .form-control {
   border-radius: 25px;
@@ -420,11 +437,12 @@ form button.btn.btn-success {
   display: block;
   margin: 10px auto !important;
   padding: 20px;
-  font-size: 18px;
   height: 60px;
   max-width: 300px;
   border-radius: 30px;
   font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   form button.btn.btn-success {
@@ -490,21 +508,24 @@ form button.btn.btn-success {
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
-    font-size: 60px;
     line-height: 70px;
     letter-spacing: 1.3px;
     font-weight: 400;
+    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
   font-weight: 500;
-  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
     font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption p strong {
@@ -546,6 +567,7 @@ footer .logo-footer .link {
   color: #4a4a4a;
   font-weight: 700;
   font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,10 +592,11 @@ footer .footer-nav-column {
 footer .footer-nav-column a {
   color: #4a4a4a;
   line-height: 40px;
-  font-size: 18px;
   font-weight: 500;
   width: 100%;
   text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   footer .footer-nav-column a {
@@ -594,12 +617,13 @@ footer .footer-nav-column a {
 footer p {
   width: 100%;
   padding-top: 30px;
-  font-size: 14px;
   line-height: 20px;
   letter-spacing: 1.3px;
   margin-top: 30px;
   border-top: 1px solid #efefef;
   text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -613,10 +637,11 @@ footer p {
   text-transform: none;
   font-family: "Montserrat";
   text-align: center;
-  font-size: 18px;
   margin: 0 !important;
   width: 100%;
   background: none;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion .suscripcion-title {
@@ -632,10 +657,11 @@ footer p {
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion h4 {
-    font-size: 33px;
     letter-spacing: 0.5px;
     margin: 0;
     text-align: left;
+    font-size: 33px;
+    font-size: 2.0625rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -656,11 +682,12 @@ footer p {
   border: none;
   width: 100%;
   max-width: 200px;
-  font-size: 14px;
   height: 45px;
   padding: 0;
   display: inline-block;
   margin: 0;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion .suscripcion-form button.btn.btn-success {
@@ -708,6 +735,10 @@ section {
   padding-top: 55px;
   padding-bottom: 55px;
   border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .hero .navbar.sticky {
@@ -765,9 +796,10 @@ section {
   color: white;
   width: 21px;
   height: 21px;
-  font-size: 11;
   font-weight: 600;
   text-align: center;
+  font-size: 11px;
+  font-size: 0.6875rem;
 }
 .hero .navbar .nav-link {
   font-weight: 500;
@@ -775,6 +807,8 @@ section {
   padding: 0 !important;
   color: inherit;
   text-align: left;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .hero .navbar .nav-link {
@@ -798,30 +832,15 @@ section {
   color: #4a4a4a !important;
 }
 
-#sidebar {
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 999;
-  background: #7386D5;
-  color: #fff;
-  transition: all 0.3s;
-}
-
 .contacto:before {
   background-image: url("../img/fondo-contacto.png");
   opacity: 0.15;
+  filter: alpha(opacity=15);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .contacto:before {
     background-position: center top;
   }
-}
-.contacto form {
-  width: 100%;
-  max-width: 400px;
 }
 .contacto address div {
   display: flex;
@@ -829,17 +848,20 @@ section {
 }
 .contacto address div .fas {
   color: #a7874d;
-  font-size: 20px;
   margin-right: 30px;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 .contacto address div p {
   margin: 0;
   font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .distribuir:before {
   background-image: url("../img/fondo-distribuir.png");
   opacity: 0.05;
+  filter: alpha(opacity=5);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .distribuir:before {
@@ -902,13 +924,15 @@ section {
 
 .historia:before {
   background: url("../img/fondo-historia.png");
-  opacity: 1 !important;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .prensa-y-premios:before {
   object-fit: cover;
   background-image: url("../img/fondo-distribuir.png");
-  opacity: 0.05 !important;
+  opacity: 0.05;
+  filter: alpha(opacity=5);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .prensa-y-premios:before {
@@ -932,6 +956,10 @@ section {
 }
 .prensa-y-premios .premios.slick-slider div,
 .prensa-y-premios .prensa.slick-slider div {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
   transition: none;
 }
 .prensa-y-premios .premios.slick-slider .slick-list,
@@ -953,6 +981,10 @@ section {
   align-items: center;
   justify-content: center;
   background-color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.prev,
@@ -1007,6 +1039,10 @@ section {
 .producto-detalle .carousel.slide.product {
   height: 390px;
   margin-bottom: 10px;
+  -webkit-transition: top 0.2s ease-in-out;
+  -moz-transition: top 0.2s ease-in-out;
+  -ms-transition: top 0.2s ease-in-out;
+  -o-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -1054,15 +1090,25 @@ section {
   }
 }
 .producto-detalle .content .description {
-  font-size: 17px;
   line-height: 25px;
   letter-spacing: 0;
   color: #4a4a4a;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .content .description {
     width: 69%;
   }
+}
+.producto-detalle .content .price {
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #655536;
+  letter-spacing: 0.7px;
+  margin: 10px 0 30px !important;
 }
 .producto-detalle .content .maridaje {
   display: flex;
@@ -1101,26 +1147,29 @@ section {
   font-family: "Playfair Display";
   font-weight: 600;
   text-transform: none;
-  font-size: 18px;
   letter-spacing: 0.5px;
   color: #4a4a4a;
   margin: 0 0 10px 0;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .producto-detalle .content .maridaje .item p {
   font-weight: 500;
   font-size: 14px;
+  font-size: 0.875rem;
 }
 .producto-detalle .content .badge {
   border: 2px solid #9a9a9a;
   border-radius: 22px;
   color: #4a4a4a;
-  font-size: 14px;
   min-width: 80px;
   width: 100%;
   height: 45px;
   font-weight: 500;
   padding: 10px 0;
   margin: 5px;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .producto-detalle .content .badge.active {
   border: 2px solid #166439;
@@ -1134,9 +1183,9 @@ section {
   justify-content: space-around;
   align-items: center;
   font-size: 30px;
+  font-size: 1.875rem;
 }
 .producto-detalle .content .counter .qty {
-  font-size: 18px;
   color: #4a4a4a;
   font-weight: 600;
   -webkit-appearance: none;
@@ -1145,6 +1194,8 @@ section {
   width: 40%;
   background: none;
   text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .producto-detalle .content .counter input::-webkit-outer-spin-button,
 .producto-detalle .content .counter input::-webkit-inner-spin-button {
@@ -1168,6 +1219,10 @@ section {
   .inner-page {
     text-align: center;
     padding-top: 140px;
+    -webkit-transition: padding-top 0.2s ease-in-out;
+    -moz-transition: padding-top 0.2s ease-in-out;
+    -ms-transition: padding-top 0.2s ease-in-out;
+    -o-transition: padding-top 0.2s ease-in-out;
     transition: padding-top 0.2s ease-in-out;
   }
 }
@@ -1189,6 +1244,7 @@ section {
   background-position: center 140px;
   background-size: 100%;
   opacity: 0.15;
+  filter: alpha(opacity=15);
   z-index: -2;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -1207,24 +1263,27 @@ section {
   object-fit: contain;
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, #f6f6f6 40%);
   opacity: 1;
+  filter: alpha(opacity=100);
   z-index: -1;
 }
 .inner-page h2 {
   font-family: "Playfair Display";
-  font-size: 30px;
   letter-spacing: 0.5px;
   text-align: left;
   padding: 0;
   margin: 0 0 30px;
   text-transform: none;
   background: none !important;
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 .inner-page p {
-  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0;
   color: #4a4a4a;
   text-align: left;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .inner-page form {
   width: 100%;

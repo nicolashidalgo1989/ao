@@ -28,10 +28,10 @@
             position: absolute;
             color: white;
             top: 40px;
-            font-size: 30px;
             z-index: 1;
             letter-spacing: 0.83px;
             line-height: 40px;
+            @include font-size(30px);
         }
         &.d-flex {
             justify-content: center;
@@ -55,24 +55,24 @@
         padding: 0;
         h4 {
             color: $green;
-            font-size: 14px;
             font-weight: 600;
             font-family: $font-text;
             margin: 0 0 5px;
+            @include font-size(14px);
         }
         .card-title {
             margin: 0 0 5px;
-            font-size: 30px;
             letter-spacing: .5px;
             font-family: $font-title;
+            @include font-size(30px);
         }
         .card-text {
             font-family: $font-text;
-            font-size: 18px;
             line-height: 25px;
             letter-spacing: 0;
             text-align: center;
             padding: 0 1.25rem;
+            @include font-size(18px);
         }
     }
 }

@@ -1,44 +1,44 @@
 h1 {
-    font-family: "Playfair Display";
-    font-size: 42px;
+    font-family: $font-title;
     font-weight: 900;
     max-width: 150px;
     width: 100%;
     color: $dark;
+    @include font-size(42px);
     small {
-        font-size: 22px;
+        @include font-size(22px);
         font-weight: 400;
     }
 }
 
 h2 {
-    font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 15px;
     background: url(../img/detalle-separacion.svg) center top no-repeat transparent;
     padding-top: 25px;
+    @include font-size(20px);
 }
 
 h3 {
-    font-family: "Playfair Display";
+    font-family: $font-title;
     font-weight: 700;
     text-transform: none;
-    font-size: 38px;
     letter-spacing: 0.7px;
     line-height: 45px;
     margin-bottom: 15px;
+    @include font-size(38px);
 }
 
 h4 {
-    font-family: "Playfair Display";
+    font-family: $font-title;
     font-weight: 400;
     text-transform: none;
-    font-size: 28px;
     letter-spacing: 0.5px;
     color: $dark;
     margin-bottom: 15px;
+    @include font-size(28px);
     @include media(md) {
-        font-size: 40px;
+        @include font-size(40px);
     }
 }
 
@@ -48,7 +48,7 @@ h5 {
 }
 
 h6 {
-    font-size: 18px;
+    @include font-size(18px);
     line-height: 25px;
     color: $grey;
     letter-spacing: 0;
@@ -60,16 +60,7 @@ p {
 }
 
 .font-size-20 {
-    font-size: 20px;
-}
-
-.price {
-    font-family: "Playfair Display";
-    font-weight: 900;
-    font-size: 40px;
-    color: $brown;
-    letter-spacing: 0.7px;
-    margin: 10px 0 30px!important;
+    @include font-size(20px)
 }
 
 .text-brown {
