@@ -22,7 +22,7 @@
         top: 0;
         left: 0;
         object-fit: cover;
-        background-image: url("../../img/fondo-historia.png");
+        background-image: url("../img/fondo-historia.png");
         background-repeat: no-repeat;
         background-position: center 140px;
         background-size: cover;
@@ -82,18 +82,18 @@
                     @include media(md) {
                         right: 150px;
                     }
-                    background-image: url(../../img/flecha-izquierda-verde.svg);
+                    background-image: url(../img/flecha-izquierda-verde.svg);
                     &:hover {
-                        background-image: url(../../img/flecha-izquierda-blanca.svg);
+                        background-image: url(../img/flecha-izquierda-blanca.svg);
                     }
                 }
                 &.next {
                     @include media(md) {
                         right: 80px;
                     }
-                    background-image: url(../../img/flecha-derecha-verde.svg);
+                    background-image: url(../img/flecha-derecha-verde.svg);
                     &:hover {
-                        background-image: url(../../img/flecha-derecha-blanca.svg);
+                        background-image: url(../img/flecha-derecha-blanca.svg);
                     }
                 }
                 @include media(md) {

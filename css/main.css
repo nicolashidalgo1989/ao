@@ -827,7 +827,7 @@ section {
   top: 0;
   left: 0;
   object-fit: contain;
-  background-image: url("../../img/fondo-contacto.png");
+  background-image: url("../img/fondo-contacto.png");
   background-repeat: no-repeat;
   background-position: center 140px;
   background-size: 100%;
@@ -910,7 +910,7 @@ section {
   top: 0;
   left: 0;
   object-fit: contain;
-  background-image: url("../../img/fondo-distribuir.png");
+  background-image: url("../img/fondo-distribuir.png");
   background-repeat: no-repeat;
   background-position: center 140px;
   background-size: 100%;
@@ -982,7 +982,7 @@ section {
   margin: 0 auto;
   object-fit: contain;
   background-color: #f6f6f6;
-  background-image: url(../../img/fondo-botellas.png);
+  background-image: url(../img/fondo-botellas.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1039,7 +1039,7 @@ section {
   top: 0;
   left: 0;
   object-fit: contain;
-  background: url("../../img/fondo-historia.png");
+  background: url("../img/fondo-historia.png");
   background-repeat: no-repeat;
   background-position: center 140px;
   background-size: 100%;
@@ -1099,7 +1099,7 @@ section {
   top: 0;
   left: 0;
   object-fit: cover;
-  background-image: url("../../img/fondo-historia.png");
+  background-image: url("../img/fondo-historia.png");
   background-repeat: no-repeat;
   background-position: center 140px;
   background-size: cover;
@@ -1180,7 +1180,7 @@ section {
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.prev,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.prev {
-  background-image: url(../../img/flecha-izquierda-verde.svg);
+  background-image: url(../img/flecha-izquierda-verde.svg);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .prensa-y-premios .premios.slick-slider .slick-arrow.prev,
@@ -1190,11 +1190,11 @@ section {
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.prev:hover,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.prev:hover {
-  background-image: url(../../img/flecha-izquierda-blanca.svg);
+  background-image: url(../img/flecha-izquierda-blanca.svg);
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.next,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.next {
-  background-image: url(../../img/flecha-derecha-verde.svg);
+  background-image: url(../img/flecha-derecha-verde.svg);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .prensa-y-premios .premios.slick-slider .slick-arrow.next,
@@ -1204,7 +1204,7 @@ section {
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.next:hover,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.next:hover {
-  background-image: url(../../img/flecha-derecha-blanca.svg);
+  background-image: url(../img/flecha-derecha-blanca.svg);
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .prensa-y-premios .premios.slick-slider .slick-arrow,
@@ -1313,7 +1313,7 @@ section {
   }
 }
 .producto-detalle .content .maridaje .item {
-  background: url(../../img/bg-card-maridaje.png) no-repeat 0px 0px transparent;
+  background: url(../img/bg-card-maridaje.png) no-repeat 0px 0px transparent;
   width: 150px;
   height: 300px;
   padding: 10px 15px;
