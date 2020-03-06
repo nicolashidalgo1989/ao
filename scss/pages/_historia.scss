@@ -19,10 +19,15 @@
         top: 0;
         left: 0;
         object-fit: contain;
-        background: url("../../img/fondo-historia.png") no-repeat center 140px;
+        background: url("../../img/fondo-historia.png");
+        background-repeat: no-repeat;
+        background-position: center 140px;
         background-size: 100%;
         opacity: 1;
         z-index: -2;
+        @include media(md) {
+            background-position: center 140px;
+        }
     }
     &:after {
         content: "";

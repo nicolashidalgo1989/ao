@@ -37,3 +37,9 @@
         z-index: -1;
     }
 }
+
+.slick-list {
+    @include media(md) {
+        margin: 0 auto!important;
+    }
+}

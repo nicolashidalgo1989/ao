@@ -1,7 +1,9 @@
 .contacto {
     position: relative;
     .navbar {
-        background: $bg-main!important;
+        @include media(md) {
+            background: $bg-main!important;
+        }
     }
     &:before {
         content: "";
@@ -12,10 +14,15 @@
         top: 0;
         left: 0;
         object-fit: contain;
-        background: url("../../img/fondo-contacto.png") no-repeat center top;
+        background-image: url("../../img/fondo-contacto.png");
+        background-repeat: no-repeat;
+        background-position: center 140px;
         background-size: 100%;
         opacity: 0.15;
         z-index: -2;
+        @include media(md) {
+            background-position: center top;
+        }
     }
     &:after {
         content: "";
@@ -52,7 +59,8 @@
         text-align: left;
     }
     form {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
     }
     address {
         div {

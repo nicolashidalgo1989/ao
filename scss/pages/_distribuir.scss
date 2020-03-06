@@ -1,7 +1,9 @@
 .distribuir {
     position: relative;
     .navbar {
-        background: $bg-main!important;
+        @include media(md) {
+            background: $bg-main!important;
+        }
     }
     &:before {
         content: "";
@@ -12,10 +14,15 @@
         top: 0;
         left: 0;
         object-fit: contain;
-        background: url("../../img/fondo-distribuir.png") no-repeat center -200px;
+        background-image: url("../../img/fondo-distribuir.png");
+        background-repeat: no-repeat;
+        background-position: center 140px;
         background-size: 100%;
         opacity: 0.05;
         z-index: -2;
+        @include media(md) {
+            background-position: center -200px;
+        }
     }
     &:after {
         content: "";
@@ -44,7 +51,9 @@
         margin: 0 0 30px;
         text-transform: none;
         background: none!important;
-        width: 65%;
+        @include media(md) {
+            width: 65%;
+        }
     }
     p {
         font-size: 18px;
@@ -53,6 +62,6 @@
         text-align: left;
     }
     form {
-        width: 400px;
+        max-width: 400px;
     }
 }

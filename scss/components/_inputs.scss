@@ -30,12 +30,15 @@ form {
         border: none;
         width: 100%;
         display: block;
-        margin: 10px 0!important;
+        margin: 10px auto!important;
         padding: 20px;
         font-size: 18px;
         height: 60px;
         max-width: 300px;
         border-radius: 30px;
         font-weight: 600;
+        @include media(md) {
+            margin: 10px 0!important;
+        }
     }
 }

@@ -1,5 +1,8 @@
 .banner {
-    padding-top: 70px;
+    padding-top: 220px;
+    @include media(md) {
+        padding-top: 70px;
+    }
     h1.title-banner {
         font-family: "Playfair Display";
         font-size: 50px;

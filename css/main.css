@@ -98,7 +98,12 @@ p {
 }
 
 .banner {
-  padding-top: 70px;
+  padding-top: 220px;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .banner {
+    padding-top: 70px;
+  }
 }
 .banner h1.title-banner {
   font-family: "Playfair Display";
@@ -413,13 +418,18 @@ form button.btn.btn-success {
   border: none;
   width: 100%;
   display: block;
-  margin: 10px 0 !important;
+  margin: 10px auto !important;
   padding: 20px;
   font-size: 18px;
   height: 60px;
   max-width: 300px;
   border-radius: 30px;
   font-weight: 600;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  form button.btn.btn-success {
+    margin: 10px 0 !important;
+  }
 }
 
 .hero.is-dark .carousel-control-prev-icon {
@@ -458,7 +468,7 @@ form button.btn.btn-success {
   object-fit: cover;
   display: block;
 }
-.hero .carousel.slide .carousel-inner .carousel-item img .object-fit-contain {
+.hero .carousel.slide .carousel-inner .carousel-item img.object-fit-contain {
   object-fit: contain !important;
 }
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption {
@@ -601,18 +611,20 @@ footer p {
 }
 .suscripcion .suscripcion-title {
   text-transform: none;
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 18px;
+  margin: 0 !important;
+  width: 100%;
+  background: none;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion .suscripcion-title {
-    font-size: 18px;
-    background: none;
     line-height: 25px;
     text-align: left;
     padding: 0;
     margin: 0;
     letter-spacing: 0;
-    font-family: "Montserrat";
-    width: 100%;
   }
 }
 .suscripcion h4 {
@@ -629,6 +641,7 @@ footer p {
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion .suscripcion-form {
     width: 70%;
+    max-width: 100%;
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -759,9 +772,15 @@ section {
 .hero .navbar .nav-link {
   font-weight: 500;
   letter-spacing: 1px;
-  text-align: right;
-  padding: 0 10px !important;
+  padding: 0 !important;
   color: inherit;
+  text-align: left;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .hero .navbar .nav-link {
+    text-align: right;
+    padding: 0 10px !important;
+  }
 }
 .hero .navbar-toggler .navbar-toggler-icon {
   background: #0b0b0b;
@@ -779,11 +798,25 @@ section {
   color: #4a4a4a !important;
 }
 
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #7386D5;
+  color: #fff;
+  transition: all 0.3s;
+}
+
 .contacto {
   position: relative;
 }
-.contacto .navbar {
-  background: #f6f6f6 !important;
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .contacto .navbar {
+    background: #f6f6f6 !important;
+  }
 }
 .contacto:before {
   content: "";
@@ -794,10 +827,17 @@ section {
   top: 0;
   left: 0;
   object-fit: contain;
-  background: url("../../img/fondo-contacto.png") no-repeat center top;
+  background-image: url("../../img/fondo-contacto.png");
+  background-repeat: no-repeat;
+  background-position: center 140px;
   background-size: 100%;
   opacity: 0.15;
   z-index: -2;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .contacto:before {
+    background-position: center top;
+  }
 }
 .contacto:after {
   content: "";
@@ -836,7 +876,8 @@ section {
   text-align: left;
 }
 .contacto form {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .contacto address div {
   display: flex;
@@ -855,8 +896,10 @@ section {
 .distribuir {
   position: relative;
 }
-.distribuir .navbar {
-  background: #f6f6f6 !important;
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .distribuir .navbar {
+    background: #f6f6f6 !important;
+  }
 }
 .distribuir:before {
   content: "";
@@ -867,10 +910,17 @@ section {
   top: 0;
   left: 0;
   object-fit: contain;
-  background: url("../../img/fondo-distribuir.png") no-repeat center -200px;
+  background-image: url("../../img/fondo-distribuir.png");
+  background-repeat: no-repeat;
+  background-position: center 140px;
   background-size: 100%;
   opacity: 0.05;
   z-index: -2;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .distribuir:before {
+    background-position: center -200px;
+  }
 }
 .distribuir:after {
   content: "";
@@ -901,7 +951,11 @@ section {
   margin: 0 0 30px;
   text-transform: none;
   background: none !important;
-  width: 65%;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .distribuir h2 {
+    width: 65%;
+  }
 }
 .distribuir p {
   font-size: 18px;
@@ -910,7 +964,7 @@ section {
   text-align: left;
 }
 .distribuir form {
-  width: 400px;
+  max-width: 400px;
 }
 
 .aceite-container {
@@ -955,6 +1009,12 @@ section {
   z-index: -1;
 }
 
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .slick-list {
+    margin: 0 auto !important;
+  }
+}
+
 .historia {
   position: relative;
 }
@@ -979,10 +1039,17 @@ section {
   top: 0;
   left: 0;
   object-fit: contain;
-  background: url("../../img/fondo-historia.png") no-repeat center 140px;
+  background: url("../../img/fondo-historia.png");
+  background-repeat: no-repeat;
+  background-position: center 140px;
   background-size: 100%;
   opacity: 1;
   z-index: -2;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .historia:before {
+    background-position: center 140px;
+  }
 }
 .historia:after {
   content: "";
@@ -1006,6 +1073,7 @@ section {
 }
 
 .prensa-y-premios {
+  position: relative;
   background-repeat: no-repeat;
   background-position: center 140px;
   background-color: #f6f6f6;
@@ -1019,11 +1087,42 @@ section {
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .prensa-y-premios .navbar {
-    background: #f6f6f6;
+    background: #f6f6f6 !important;
   }
 }
-.prensa-y-premios .banner {
+.prensa-y-premios:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
   background-image: url("../../img/fondo-historia.png");
+  background-repeat: no-repeat;
+  background-position: center 140px;
+  background-size: cover;
+  opacity: 1;
+  z-index: -2;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .prensa-y-premios:before {
+    background-position: center 140px;
+  }
+}
+.prensa-y-premios:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: contain;
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, #f6f6f6 40%);
+  opacity: 1;
+  z-index: -1;
 }
 .prensa-y-premios h2 {
   font-size: 30px;
@@ -1046,10 +1145,12 @@ section {
 }
 .prensa-y-premios .premios,
 .prensa-y-premios .prensa {
+  width: 100%;
   background-color: #f6f6f6;
 }
 .prensa-y-premios .premios.slick-slider,
 .prensa-y-premios .prensa.slick-slider {
+  width: 100%;
   position: relative;
 }
 .prensa-y-premios .premios.slick-slider div,
@@ -1062,8 +1163,6 @@ section {
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow,
 .prensa-y-premios .prensa.slick-slider .slick-arrow {
-  top: -100px;
-  position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
@@ -1081,8 +1180,13 @@ section {
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.prev,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.prev {
-  right: 150px;
   background-image: url(../../img/flecha-izquierda-verde.svg);
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .prensa-y-premios .premios.slick-slider .slick-arrow.prev,
+.prensa-y-premios .prensa.slick-slider .slick-arrow.prev {
+    right: 150px;
+  }
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.prev:hover,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.prev:hover {
@@ -1090,12 +1194,24 @@ section {
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.next,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.next {
-  right: 80px;
   background-image: url(../../img/flecha-derecha-verde.svg);
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .prensa-y-premios .premios.slick-slider .slick-arrow.next,
+.prensa-y-premios .prensa.slick-slider .slick-arrow.next {
+    right: 80px;
+  }
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow.next:hover,
 .prensa-y-premios .prensa.slick-slider .slick-arrow.next:hover {
   background-image: url(../../img/flecha-derecha-blanca.svg);
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .prensa-y-premios .premios.slick-slider .slick-arrow,
+.prensa-y-premios .prensa.slick-slider .slick-arrow {
+    top: -100px;
+    position: absolute;
+  }
 }
 .prensa-y-premios .premios.slick-slider .slick-arrow:hover,
 .prensa-y-premios .prensa.slick-slider .slick-arrow:hover {
@@ -1110,23 +1226,39 @@ section {
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
+  .producto-detalle .fixed-bottom-carousel {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .navbar {
     background: #f6f6f6;
   }
 }
 .producto-detalle .carousel.slide.product {
   height: 390px;
-  position: fixed;
-  top: 140px;
+  margin-bottom: 10px;
   transition: top 0.2s ease-in-out;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .producto-detalle .carousel.slide.product {
+    position: fixed;
+    top: 140px;
+  }
 }
 .producto-detalle .carousel.slide.product.at-footer {
   position: absolute;
   bottom: 0;
   top: 0;
 }
-.producto-detalle .carousel.slide.product.sticky {
-  top: 78px;
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .producto-detalle .carousel.slide.product.sticky {
+    top: 78px;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .carousel.slide.product {
@@ -1142,8 +1274,18 @@ section {
     border-radius: 0;
   }
 }
-.producto-detalle .carousel.slide.product.sticky {
-  position: fixed;
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .producto-detalle .carousel.slide.product.sticky {
+    position: fixed;
+  }
+}
+.producto-detalle .carousel.slide.product img {
+  object-fit: cover;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .producto-detalle .carousel.slide.product img {
+    object-fit: none;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .content {
@@ -1207,7 +1349,7 @@ section {
   font-weight: 500;
   font-size: 14px;
 }
-.producto-detalle .badge {
+.producto-detalle .content .badge {
   border: 2px solid #9a9a9a;
   border-radius: 22px;
   color: #4a4a4a;
@@ -1219,12 +1361,12 @@ section {
   padding: 10px 0;
   margin: 5px;
 }
-.producto-detalle .badge.active {
+.producto-detalle .content .badge.active {
   border: 2px solid #166439;
   color: #166439;
   font-weight: 600;
 }
-.producto-detalle .counter {
+.producto-detalle .content .counter {
   width: 200px;
   margin: 0 auto;
   display: flex;
@@ -1232,7 +1374,7 @@ section {
   align-items: center;
   font-size: 30px;
 }
-.producto-detalle .counter .qty {
+.producto-detalle .content .counter .qty {
   font-size: 18px;
   color: #4a4a4a;
   font-weight: 600;
@@ -1243,12 +1385,12 @@ section {
   background: none;
   text-align: center;
 }
-.producto-detalle .counter input::-webkit-outer-spin-button,
-.producto-detalle .counter input::-webkit-inner-spin-button {
+.producto-detalle .content .counter input::-webkit-outer-spin-button,
+.producto-detalle .content .counter input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.producto-detalle .counter button {
+.producto-detalle .content .counter button {
   cursor: pointer;
   font-weight: 400;
   -webkit-appearance: none;
