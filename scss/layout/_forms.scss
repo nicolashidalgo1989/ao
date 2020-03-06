@@ -42,10 +42,12 @@
         button.btn.btn-success {
             border: none;
             width: 100%;
-            max-width: 160px;
+            max-width: 200px;
             font-size: 14px;
             height: 45px;
             padding: 0;
+            display: inline-block;
+            margin: 0;
             @include media(md) {
                 max-width: 150px;
                 margin: 0 25px !important;

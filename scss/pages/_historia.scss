@@ -1,4 +1,5 @@
 .historia {
+    position: relative;
     @include media(md) {
         text-align: center;
         padding-top: 140px;
@@ -6,8 +7,35 @@
     }
     .navbar {
         @include media(md) {
-            background: $bg-main;
+            background: $bg-main!important;
         }
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        background: url("../../img/fondo-historia.png") no-repeat center 140px;
+        background-size: 100%;
+        opacity: 1;
+        z-index: -2;
+    }
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        object-fit: contain;
+        background: linear-gradient( rgba(255, 255, 255, 0) 0%, $bg-main 40%);
+        opacity: 1;
+        z-index: -1;
     }
     p {
         font-size: 18px;
@@ -15,8 +43,5 @@
         letter-spacing: 0;
         color: $grey;
         text-align: left;
-    }
-    .banner {
-        background-image: url('../img/fondo-historia.png');
     }
 }

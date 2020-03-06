@@ -1,4 +1,4 @@
-.aceite {
+.aceite-container {
     position: relative;
     &:after {
         content: "";
@@ -14,9 +14,12 @@
         background-color: $bg-main;
         background-image: url(../../img/fondo-botellas.png);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         z-index: -2;
+        @include media(md) {
+            background-size: 100%;
+        }
     }
     &:before {
         content: "";

@@ -55,11 +55,9 @@
         .navbar-toggler {
             padding: 0;
             .navbar-toggler-icon {
-                background: none;
                 width: 24px;
                 height: 2.4px;
                 border-radius: 4px;
-                background: $dark;
                 &:before,
                 &:after {
                     content: "";
