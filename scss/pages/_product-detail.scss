@@ -1,9 +1,4 @@
 .producto-detalle {
-    @include media(md) {
-        text-align: left;
-        padding-top: 140px;
-        transition: padding-top .2s ease-in-out;
-    }
     .fixed-bottom-carousel {
         @include media(md) {
             position: fixed;
@@ -11,11 +6,6 @@
             bottom: 0;
             left: 0;
             z-index: 1030;
-        }
-    }
-    .navbar {
-        @include media(md) {
-            background: $bg-main;
         }
     }
     .carousel.slide.product {
@@ -34,6 +24,7 @@
         &.sticky {
             @include media(md) {
                 top: 78px;
+                position: fixed;
             }
         }
         @include media(md) {
@@ -44,11 +35,6 @@
             border-radius: 0px 0px 30px 30px;
             @include media(md) {
                 border-radius: 0;
-            }
-        }
-        &.sticky {
-            @include media(md) {
-                position: fixed;
             }
         }
         img {

@@ -1,67 +1,14 @@
 .distribuir {
-    position: relative;
-    .navbar {
-        @include media(md) {
-            background: $bg-main!important;
-        }
-    }
     &:before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: contain;
         background-image: url("../img/fondo-distribuir.png");
-        background-repeat: no-repeat;
-        background-position: center 140px;
-        background-size: 100%;
         opacity: 0.05;
-        z-index: -2;
         @include media(md) {
             background-position: center -200px;
         }
     }
-    &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        object-fit: contain;
-        background: linear-gradient( rgba(255, 255, 255, 0) 0%, $bg-main 30%);
-        opacity: 1;
-        z-index: -1;
-    }
-    @include media(md) {
-        text-align: center;
-        padding-top: 140px;
-        transition: padding-top 0.2s ease-in-out;
-    }
     h2 {
-        font-family: $font-title;
-        font-size: 30px;
-        letter-spacing: 0.5px;
-        text-align: left;
-        padding: 0;
-        margin: 0 0 30px;
-        text-transform: none;
-        background: none!important;
         @include media(md) {
             width: 65%;
         }
-    }
-    p {
-        font-size: 18px;
-        letter-spacing: 0;
-        line-height: 25px;
-        text-align: left;
-    }
-    form {
-        max-width: 400px;
     }
 }
