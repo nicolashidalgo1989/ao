@@ -1,7 +1,7 @@
 .suscripcion {
     @include media(md) {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     .suscripcion-title {

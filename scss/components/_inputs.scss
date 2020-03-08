@@ -3,7 +3,7 @@ form {
         position: relative;
         margin-bottom: 20px;
         label {
-            color: $light;
+            color: $label;
             position: absolute;
             top: 0;
             left: 0;
@@ -24,6 +24,7 @@ form {
         input[type="text"],
         input[type="email"] {
             height: 50px;
+            color: $label;
         }
     }
     button.btn.btn-success {

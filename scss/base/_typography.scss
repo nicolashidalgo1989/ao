@@ -34,7 +34,7 @@ h4 {
     font-weight: 400;
     text-transform: none;
     letter-spacing: 0.5px;
-    color: $dark;
+    color: $grey;
     margin-bottom: 15px;
     @include font-size(28px);
     @include media(md) {
@@ -65,4 +65,8 @@ p {
 
 .text-brown {
     color: $brown;
+}
+
+.subheading {
+    font-weight: 500;
 }

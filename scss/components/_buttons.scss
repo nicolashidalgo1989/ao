@@ -12,21 +12,33 @@
         @include font-size(18px);
         @include transition(all .3s ease-in-out);
         &:hover {
-            background-color: $white;
+            background-color: $green-dark;
+        }
+    }
+    &-slide-down {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        margin: 0 auto;
+        background: url('../img/btn-scroll-banner.png') center top no-repeat white;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .1);
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        @include transition(all .1s ease-in-out);
+        &:hover {
+            bottom: -33px
+        }
+    }
+    &-outline-light {
+        color: $bg-main;
+        border: 2px solid $bg-main;
+        background: transparent;
+        @include transition(all .2s ease-in-out);
+        &:hover {
+            background: $bg-main;
             color: $green;
         }
     }
-}
-
-.btn-slide-down {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    margin: 0 auto;
-    background: url('../img/btn-scroll-banner.png') center top no-repeat white;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .1);
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
 }

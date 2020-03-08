@@ -156,7 +156,6 @@ $('#carousel.carousel-home').on('slide.bs.carousel', function() {
 
     }
 
-
 });
 
 $(window).scroll(function() {
@@ -220,3 +219,10 @@ $('.badge').on('click', function(e) {
     $(this).addClass('active');
 
 });
+
+var feed = new Instafeed({
+    get: 'tagged',
+    tagName: 'awesome',
+    clientId: 'YOUR_CLIENT_ID'
+});
+feed.run();
