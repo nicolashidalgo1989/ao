@@ -509,7 +509,7 @@ form button.btn.btn-success {
   color: #4a4a4a !important;
 }
 .hero .carousel.slide {
-  height: 666px;
+  height: 680px;
   margin-bottom: 50px;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -546,13 +546,29 @@ form button.btn.btn-success {
     right: 11%;
   }
 }
+.hero .carousel.slide .carousel-inner .carousel-item .carousel-caption h1 {
+  font-weight: 700;
+  max-width: 100%;
+  letter-spacing: 0.7px;
+  line-height: 45px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
 @media (min-width: 1023px) and (max-width: 1360px) {
-  .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption h3 {
+  .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption h1 {
     line-height: 70px;
     letter-spacing: 1.3px;
-    font-weight: 400;
     font-size: 60px;
     font-size: 3.75rem;
+  }
+}
+.hero .carousel.slide .carousel-inner .carousel-item .carousel-caption img {
+  width: 80% !important;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption img {
+    display: none;
   }
 }
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption p {
@@ -684,15 +700,16 @@ footer p {
   text-transform: none;
   font-family: "Montserrat";
   text-align: center;
-  margin: 0 !important;
+  margin: 0 0 10px !important;
   width: 100%;
-  background: none;
+  font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion .suscripcion-title {
     line-height: 25px;
+    background: none;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -701,14 +718,14 @@ footer p {
 }
 .suscripcion h4 {
   margin-bottom: 36px;
+  font-size: 33px;
+  font-size: 2.0625rem;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .suscripcion h4 {
     letter-spacing: 0.5px;
     margin: 0;
     text-align: left;
-    font-size: 33px;
-    font-size: 2.0625rem;
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
@@ -922,49 +939,54 @@ section {
 }
 
 .aceite h4 {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .aceite h4 {
+    margin-bottom: 70px;
+  }
 }
 
 .aceite-container {
   position: relative;
 }
-.aceite-container:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  object-fit: contain;
-  background-color: white;
-  background-image: url(../img/fondo-botellas.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -2;
-}
 @media (min-width: 1023px) and (max-width: 1360px) {
   .aceite-container:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    object-fit: contain;
+    background-color: white;
+    background-image: url(../img/fondo-botellas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
     background-size: 100%;
   }
 }
-.aceite-container:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  object-fit: contain;
-  background: #f6f6f6;
-  background: linear-gradient(white 10%, rgba(255, 255, 255, 0.45) 50%, white 90%);
-  z-index: -1;
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .aceite-container:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    object-fit: contain;
+    background: #f6f6f6;
+    background: linear-gradient(white 10%, rgba(255, 255, 255, 0.45) 50%, white 90%);
+    z-index: -1;
+  }
 }
 
 @media (min-width: 1023px) and (max-width: 1360px) {

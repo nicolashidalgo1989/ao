@@ -8,12 +8,13 @@
         text-transform: none;
         font-family: $font-text;
         text-align: center;
-        margin: 0!important;
+        margin: 0 0 10px!important;
         width: 100%;
-        background: none;
+        font-weight: 400;
         @include font-size(18px);
         @include media(md) {
             line-height: 25px;
+            background: none;
             text-align: left;
             padding: 0;
             margin: 0;
@@ -22,11 +23,11 @@
     }
     h4 {
         margin-bottom: 36px;
+        @include font-size(33px);
         @include media(md) {
             letter-spacing: 0.5px;
             margin: 0;
             text-align: left;
-            @include font-size(33px);
         }
     }
     .suscripcion-form {
