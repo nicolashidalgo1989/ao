@@ -547,10 +547,11 @@ form button.btn.btn-success {
   }
 }
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption h1 {
-  font-weight: 700;
+  font-weight: 400;
   max-width: 100%;
   letter-spacing: 0.7px;
   line-height: 45px;
+  color: #4a4a4a;
   margin-bottom: 15px;
   font-size: 40px;
   font-size: 2.5rem;
