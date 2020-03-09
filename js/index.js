@@ -247,7 +247,7 @@ $(window).scroll(function() {
             $('.producto-detalle').addClass('is-light');
             $('.producto-detalle').removeClass('is-dark');
 
-        } else if (scroll <= 65 && slideActiveProduct.hasClass('dark')) {
+        } else if (scroll <= 65 && slideActive.hasClass('dark')) {
 
             $('.producto-detalle').addClass('is-dark');
             $('.producto-detalle').removeClass('is-light');

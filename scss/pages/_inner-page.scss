@@ -2,15 +2,12 @@
     position: relative;
     @include media(md) {
         text-align: center;
-        padding-top: 140px;
+        padding-top: 78px;
         @include transition(padding-top .2s ease-in-out);
     }
-    &.producto-detalle {
-        @include media(md) {
-            padding-top: 78px;
-        }
-    }
     .navbar {
+        padding-top: 22px!important;
+        padding-bottom: 22px!important;
         @include media(md) {
             background: $bg-main!important;
         }
@@ -25,12 +22,12 @@
         left: 0;
         object-fit: contain;
         background-repeat: no-repeat;
-        background-position: center 140px;
+        background-position: center 78px;
         background-size: 100%;
         @include opacity(0.15);
         z-index: -2;
         @include media(md) {
-            background-position: center 140px;
+            background-position: center 78px;
         }
     }
     &:after {

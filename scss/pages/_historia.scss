@@ -1,6 +1,22 @@
 .historia {
+    &:after {
+        background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 70%);
+    }
     &:before {
-        background: url("../img/fondo-historia.png");
+        background-image: url("../img/fondo-historia.png");
+        @include media(md) {
+            background-size: 100%;
+            object-fit: contain;
+        }
+        opacity: 1!important;
         @include opacity(1);
+    }
+    .banner {
+        blockquote {
+            background-image: url('../../img/comillas.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px 0
+        }
     }
 }

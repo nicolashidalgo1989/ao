@@ -1005,10 +1005,26 @@ section {
   }
 }
 
+.historia:after {
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 70%);
+}
 .historia:before {
-  background: url("../img/fondo-historia.png");
+  background-image: url("../img/fondo-historia.png");
+  opacity: 1 !important;
   opacity: 1;
   filter: alpha(opacity=100);
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .historia:before {
+    background-size: 100%;
+    object-fit: contain;
+  }
+}
+.historia .banner blockquote {
+  background-image: url("../../img/comillas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0;
 }
 
 .prensa-y-premios:before {
@@ -1422,7 +1438,7 @@ section {
 @media (min-width: 1023px) and (max-width: 1360px) {
   .inner-page {
     text-align: center;
-    padding-top: 140px;
+    padding-top: 78px;
     -webkit-transition: padding-top 0.2s ease-in-out;
     -moz-transition: padding-top 0.2s ease-in-out;
     -ms-transition: padding-top 0.2s ease-in-out;
@@ -1430,10 +1446,9 @@ section {
     transition: padding-top 0.2s ease-in-out;
   }
 }
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .inner-page.producto-detalle {
-    padding-top: 78px;
-  }
+.inner-page .navbar {
+  padding-top: 22px !important;
+  padding-bottom: 22px !important;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .inner-page .navbar {
@@ -1450,7 +1465,7 @@ section {
   left: 0;
   object-fit: contain;
   background-repeat: no-repeat;
-  background-position: center 140px;
+  background-position: center 78px;
   background-size: 100%;
   opacity: 0.15;
   filter: alpha(opacity=15);
@@ -1458,7 +1473,7 @@ section {
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .inner-page:before {
-    background-position: center 140px;
+    background-position: center 78px;
   }
 }
 .inner-page:after {
