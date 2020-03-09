@@ -1,5 +1,17 @@
 .producto-detalle {
+    text-align: center;
+    @include media(md) {
+        text-align: left;
+    }
+    .container {
+        .w-md-100 {
+            @include media(md) {
+                width: 100%!important;
+            }
+        }
+    }
     .fixed-bottom-carousel {
+        position: static;
         @include media(md) {
             position: fixed;
             right: 0;
@@ -9,20 +21,26 @@
         }
     }
     .navbar {
-        @include media(md) {
-            padding-top: 22px!important;
-            padding-bottom: 22px!important;
-        }
+        background: transparent;
+        padding-top: 22px!important;
+        padding-bottom: 22px!important;
     }
     .carousel.slide.product {
-        height: 633px;
+        height: 390px;
         margin-bottom: 10px;
         position: relative;
-        background-color: $white;
         @include transition(top .2s ease-in-out);
         @include media(md) {
+            height: 633px;
             position: fixed;
             top: 78px;
+            background-color: $white;
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            @include media(md) {
+                height: 80%;
+            }
         }
         &.at-footer {
             position: absolute;
@@ -42,7 +60,7 @@
         .carousel-inner {
             border-radius: 0px 0px 30px 30px;
             @include media(md) {
-                border-radius: 0;
+                border-radius: 0 0 0 0;
             }
         }
         img {
@@ -58,9 +76,13 @@
             right: 0;
             margin: 0;
             height: 130px;
-            justify-content: center;
+            justify-content: end;
             align-items: end;
             padding: 0;
+            display: none;
+            @include media(md) {
+                display: flex;
+            }
             li {
                 width: 130px;
                 height: 100%;
@@ -90,14 +112,20 @@
         .content-title {
             font-size: 30px;
             letter-spacing: 0.5px;
+            text-align: center!important;
+            @include media(md) {
+                text-align: left!important;
+            }
         }
         .description {
             line-height: 25px;
             letter-spacing: 0;
             color: $grey;
+            text-align: center;
             @include font-size(18px);
             @include media(md) {
                 width: 69%;
+                text-align: left;
             }
         }
         .price {
@@ -107,6 +135,10 @@
             color: $brown;
             letter-spacing: 0.7px;
             margin: 10px 0 30px!important;
+            text-align: center;
+            @include media(md) {
+                text-align: left;
+            }
         }
         .maridaje {
             display: flex;
@@ -142,12 +174,14 @@
                     letter-spacing: 0.5px;
                     color: $grey;
                     margin: 0 0 10px 0;
+                    text-align: center;
                     @include font-size(18px);
                 }
                 p {
                     font-weight: 500;
                     text-align: center;
                     @include font-size(14px);
+                    text-align: center!important;
                 }
             }
         }
