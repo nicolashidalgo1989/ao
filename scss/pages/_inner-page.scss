@@ -5,6 +5,11 @@
         padding-top: 140px;
         @include transition(padding-top .2s ease-in-out);
     }
+    &.producto-detalle {
+        @include media(md) {
+            padding-top: 78px;
+        }
+    }
     .navbar {
         @include media(md) {
             background: $bg-main!important;

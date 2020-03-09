@@ -871,6 +871,7 @@ section {
   height: 21px;
   font-weight: 600;
   text-align: center;
+  line-height: 20px;
   font-size: 11px;
   font-size: 0.6875rem;
 }
@@ -1117,6 +1118,36 @@ section {
     text-align: left;
   }
 }
+.producto-detalle.is-dark .navbar-toggler .navbar-toggler-icon {
+  background: white;
+}
+.producto-detalle.is-dark .navbar-toggler .navbar-toggler-icon:before, .producto-detalle.is-dark .navbar-toggler .navbar-toggler-icon:after {
+  background: white;
+}
+.producto-detalle.is-dark .navbar-brand {
+  background-image: url(../img/logo-ao-white.svg);
+}
+.producto-detalle.is-dark .shopping-cart-btn {
+  background-image: url(../img/carrito-blanco.svg);
+}
+.producto-detalle.is-dark .nav-link {
+  color: white !important;
+}
+.producto-detalle.is-light .navbar-toggler .navbar-toggler-icon {
+  background: #0b0b0b;
+}
+.producto-detalle.is-light .navbar-toggler .navbar-toggler-icon:before, .producto-detalle.is-light .navbar-toggler .navbar-toggler-icon:after {
+  background: #0b0b0b;
+}
+.producto-detalle.is-light .navbar-brand {
+  background-image: url("../img/logo-ao-black.svg");
+}
+.producto-detalle.is-light .shopping-cart-btn {
+  background-image: url("../img/carrito-negro.svg");
+}
+.producto-detalle.is-light .nav-link {
+  color: #4a4a4a !important;
+}
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .container .w-md-100 {
     width: 100% !important;
@@ -1143,6 +1174,7 @@ section {
   height: 390px;
   margin-bottom: 10px;
   position: relative;
+  border-radius: 0;
   -webkit-transition: top 0.2s ease-in-out;
   -moz-transition: top 0.2s ease-in-out;
   -ms-transition: top 0.2s ease-in-out;
@@ -1182,10 +1214,12 @@ section {
 }
 .producto-detalle .carousel.slide.product .carousel-inner {
   border-radius: 0px 0px 30px 30px;
+  height: 100%;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .producto-detalle .carousel.slide.product .carousel-inner {
-    border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0 !important;
+    height: auto;
   }
 }
 .producto-detalle .carousel.slide.product img {
@@ -1394,6 +1428,11 @@ section {
     -ms-transition: padding-top 0.2s ease-in-out;
     -o-transition: padding-top 0.2s ease-in-out;
     transition: padding-top 0.2s ease-in-out;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .inner-page.producto-detalle {
+    padding-top: 78px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1360px) {

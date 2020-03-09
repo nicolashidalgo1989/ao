@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var viewport = $(window).width();
+
     $('.productos-carousel').slick({
 
         slidesToShow: 2,
@@ -131,6 +133,12 @@ $(document).ready(function() {
         }
     });
 
+    if (viewport > 480) {
+
+        $('.producto-detalle').addClass('is-light');
+
+    }
+
 });
 
 $('#carousel.carousel-home').on('slide.bs.carousel', function() {
@@ -158,6 +166,41 @@ $('#carousel.carousel-home').on('slide.bs.carousel', function() {
 
 });
 
+$('#carousel.carousel.product').on('slide.bs.carousel', function() {
+
+    var viewport = $(window).width();
+    var scroll = $(window).scrollTop();
+    var hero = $('.hero');
+    var slideActive = $('#carousel .active');
+
+    if (viewport < 480) {
+
+        if (slideActive.hasClass('light') && scroll < 200) {
+
+            hero.addClass('is-dark');
+            hero.removeClass('is-light');
+
+        } else if (slideActive.hasClass('dark') && scroll < 200) {
+
+            hero.addClass('is-light');
+            hero.removeClass('is-dark');
+
+        } else {
+
+            hero.addClass('is-light');
+            hero.removeClass('is-dark');
+
+        }
+
+    } else {
+
+        hero.addClass('is-light');
+        hero.removeClass('is-dark');
+
+    }
+
+});
+
 $(window).scroll(function() {
 
     var header = $('.navbar');
@@ -165,6 +208,8 @@ $(window).scroll(function() {
     var hero = $('.hero');
     var pageProduct = $('.producto-detalle');
     var viewport = $(window).width();
+    var slideActive = $('#carousel .active');
+    var slideActiveProduct = $('#carousel.product .active');
 
     if (scroll >= 65) {
 
@@ -195,6 +240,18 @@ $(window).scroll(function() {
 
         }
 
+    } else {
+
+        if (scroll >= 65) {
+
+            $('.producto-detalle').addClass('is-light');
+            $('.producto-detalle').removeClass('is-dark');
+
+        } else if (scroll <= 65 && slideActiveProduct.hasClass('dark')) {
+
+            $('.producto-detalle').addClass('is-dark');
+            $('.producto-detalle').removeClass('is-light');
+        }
     }
 
 });

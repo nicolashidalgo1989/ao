@@ -29,6 +29,7 @@
         height: 390px;
         margin-bottom: 10px;
         position: relative;
+        border-radius: 0;
         @include transition(top .2s ease-in-out);
         @include media(md) {
             height: 633px;
@@ -59,8 +60,10 @@
         }
         .carousel-inner {
             border-radius: 0px 0px 30px 30px;
+            height: 100%;
             @include media(md) {
-                border-radius: 0 0 0 0;
+                border-radius: 0 0 0 0!important;
+                height: auto;
             }
         }
         img {
