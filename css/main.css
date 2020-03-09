@@ -511,10 +511,14 @@ form button.btn.btn-success {
 .hero .carousel.slide {
   height: 680px;
   margin-bottom: 50px;
+  border-radius: 0 0 100% 100%/30%;
+  overflow: hidden;
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .hero .carousel.slide {
     margin-bottom: 70px;
+    border-radius: none;
+    overflow: visible;
   }
 }
 .hero .carousel.slide .carousel-inner .carousel-item {
@@ -547,7 +551,7 @@ form button.btn.btn-success {
   }
 }
 .hero .carousel.slide .carousel-inner .carousel-item .carousel-caption h1 {
-  font-weight: 400;
+  font-weight: 600;
   max-width: 100%;
   letter-spacing: 0.7px;
   line-height: 45px;
