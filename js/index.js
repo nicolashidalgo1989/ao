@@ -191,7 +191,7 @@ $(window).scroll(function() {
         } else {
 
             $('#carousel.product').removeClass('sticky');
-            pageProduct.css('padding-top', '140px');
+            pageProduct.css('padding-top', '78px');
 
         }
 

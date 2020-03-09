@@ -28,7 +28,7 @@
         overflow: hidden;
         @include media(md) {
             margin-bottom: 70px;
-            border-radius: none;
+            border-radius: 0;
             overflow: visible;
         }
         .carousel-inner {
