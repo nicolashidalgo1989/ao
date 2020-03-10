@@ -54,21 +54,15 @@
             padding: 0;
             display: block;
             background: transparent;
-            @include transition(all .2 ease-in-out);
+            @include transition(all .2s ease-in-out);
             .navbar-nav {
                 margin-left: -100%!important;
                 background: transparent;
                 margin-top: 0!important;
-                @include transition(all .5 ease-in-out);
-            }
-            &.collapsing {
-                position: relative;
-                height: 100vh;
-                overflow: hidden;
-                transition: none;
+                @include transition(all .5s ease-in-out);
             }
             &.show {
-                left: -1%!important;
+                left: 0!important;
                 top: -1px!important;
                 .navbar-nav {
                     margin-top: 0 !important;

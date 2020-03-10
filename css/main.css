@@ -773,10 +773,6 @@ footer p {
   }
 }
 
-section {
-  padding: 70px 0;
-}
-
 .hero.is-dark .navbar-toggler .navbar-toggler-icon {
   background: white;
 }
@@ -1029,9 +1025,6 @@ section {
   font-size: 18px;
   font-size: 1.125rem;
 }
-.contacto section {
-  padding: 40px 0 70px;
-}
 
 .distribuir:before {
   background-image: url("../img/fondo-distribuir.png");
@@ -1047,9 +1040,6 @@ section {
   .distribuir h2 {
     width: 65%;
   }
-}
-.distribuir section {
-  padding: 0 0 70px;
 }
 
 .aceite h4 {
@@ -1131,9 +1121,6 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   padding: 20px 0;
-}
-.historia section {
-  padding: 60px 0 70px;
 }
 
 .prensa-y-premios:before {
