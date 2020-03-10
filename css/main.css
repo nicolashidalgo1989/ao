@@ -1039,7 +1039,7 @@ footer p {
   font-size: 1.125rem;
 }
 .contacto .distribucion-banner {
-  background-image: url(../../img/fondo-distribución-banner.png);
+  background-image: url(../img/fondo-distribución-banner.png);
   background-color: transparent;
   background-repeat: no-repeat;
   display: flex;
