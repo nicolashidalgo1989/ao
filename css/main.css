@@ -1012,13 +1012,13 @@ footer p {
   background-size: contain;
 }
 .contacto address div .icon-address.phone {
-  background-image: url(../../img/icono-telefono.svg);
+  background-image: url(../img/icono-telefono.svg);
 }
 .contacto address div .icon-address.email {
-  background-image: url(../../img/icono-mail.svg);
+  background-image: url(../img/icono-mail.svg);
 }
 .contacto address div .icon-address.map {
-  background-image: url(../../img/icono-direccion.svg);
+  background-image: url(../img/icono-direccion.svg);
 }
 .contacto address div p {
   margin: 0;
