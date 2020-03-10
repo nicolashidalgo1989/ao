@@ -10,15 +10,29 @@
           div {
               display: flex;
               margin-bottom: 22px;
-              .fas {
-                  color: $orange;
+              .icon-address {
+                  width: 30px;
+                  height: 30px;
                   margin-right: 30px;
-                  @include font-size(20px);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  &.phone {
+                      background-image: url(../../img/icono-telefono.svg);
+                  }
+                  &.email {
+                      background-image: url(../../img/icono-mail.svg);
+                  }
+                  &.map {
+                      background-image: url(../../img/icono-direccion.svg);
+                  }
               }
               p {
                   margin: 0;
                   @include font-size(18px);
               }
           }
+      }
+      section {
+          padding: 40px 0 70px;
       }
   }

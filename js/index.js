@@ -80,12 +80,15 @@ $(document).ready(function() {
         }, {
             breakpoint: 608,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
+                slidesToScroll: 1
             }
         }, {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1
+                arrows: false,
+                slidesToShow: 2,
+                slidesToScroll: 1
             }
         }]
 
@@ -139,48 +142,19 @@ $(document).ready(function() {
 
     }
 
-});
+    $('#carousel.carousel-home').on('slide.bs.carousel', function() {
 
-$('#carousel.carousel-home').on('slide.bs.carousel', function() {
+        var viewport = $(window).width();
+        var scroll = $(window).scrollTop();
+        var hero = $('.hero');
+        var slideActive = $('#carousel .active');
 
-    var scroll = $(window).scrollTop();
-    var hero = $('.hero');
-    var slideActive = $('#carousel .active');
-
-    if (slideActive.hasClass('light') && scroll < 200) {
-
-        hero.addClass('is-dark');
-        hero.removeClass('is-light');
-
-    } else if (slideActive.hasClass('dark') && scroll < 200) {
-
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
-
-    } else {
-
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
-
-    }
-
-});
-
-$('#carousel.carousel.product').on('slide.bs.carousel', function() {
-
-    var viewport = $(window).width();
-    var scroll = $(window).scrollTop();
-    var hero = $('.hero');
-    var slideActive = $('#carousel .active');
-
-    if (viewport < 480) {
-
-        if (slideActive.hasClass('light') && scroll < 200) {
+        if (slideActive.hasClass('light') && scroll < 200 && viewport > 480) {
 
             hero.addClass('is-dark');
             hero.removeClass('is-light');
 
-        } else if (slideActive.hasClass('dark') && scroll < 200) {
+        } else if (slideActive.hasClass('dark') && scroll < 200 && viewport > 480) {
 
             hero.addClass('is-light');
             hero.removeClass('is-dark');
@@ -192,14 +166,65 @@ $('#carousel.carousel.product').on('slide.bs.carousel', function() {
 
         }
 
-    } else {
+    });
 
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
+    $('#carousel.carousel.product').on('slide.bs.carousel', function() {
 
-    }
+        var viewport = $(window).width();
+        var scroll = $(window).scrollTop();
+        var hero = $('.hero');
+        var slideActive = $('#carousel .active');
 
+        if (viewport < 480) {
+
+            if (slideActive.hasClass('light') && scroll < 200 && viewport > 480) {
+
+                hero.addClass('is-dark');
+                hero.removeClass('is-light');
+
+            } else if (slideActive.hasClass('dark') && scroll < 200 && viewport > 480) {
+
+                hero.addClass('is-light');
+                hero.removeClass('is-dark');
+
+            } else {
+
+                hero.addClass('is-light');
+                hero.removeClass('is-dark');
+
+            }
+
+        } else {
+
+            hero.addClass('is-light');
+            hero.removeClass('is-dark');
+
+        }
+
+    });
+
+    $(".btn-slide-down").on('click', function(event) {
+
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+
+    });
+
+    $('.badge').on('click', function(e) {
+
+        $(this).siblings('.badge').removeClass('active');
+        $(this).addClass('active');
+
+    });
 });
+
 
 $(window).scroll(function() {
 
@@ -253,26 +278,5 @@ $(window).scroll(function() {
             $('.producto-detalle').removeClass('is-light');
         }
     }
-
-});
-
-$(".btn-slide-down").on('click', function(event) {
-
-    if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function() {
-            window.location.hash = hash;
-        });
-    }
-
-});
-
-$('.badge').on('click', function(e) {
-
-    $(this).siblings('.badge').removeClass('active');
-    $(this).addClass('active');
 
 });

@@ -12,6 +12,14 @@
             background: $bg-main!important;
         }
     }
+    .banner {
+        .title-banner {
+            @include font-size(40px);
+            @include media(md) {
+                @include font-size(50px);
+            }
+        }
+    }
     &:before {
         content: "";
         display: block;

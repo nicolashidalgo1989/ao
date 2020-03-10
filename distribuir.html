@@ -26,15 +26,23 @@
                 <div class="container-fluid">
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
-                        
-                        <span class="navbar-toggler-icon"></span>
-                        
-                    </button>
+                            
+                            <span class="navbar-toggler-icon"></span>
+                            
+                        </button>
 
                     <a class="navbar-brand" href="index.html"></a>
 
                     <div class="collapse navbar-collapse" id="toggle">
-                        <ul class="navbar-nav ml-md-auto mr-md-5 pr-md-5 mt-2 mt-lg-0">
+
+                        <ul class="navbar-nav ml-md-auto mr-md-5 pr-md-5 mt-5 mt-lg-0">
+
+                            <button class="navbar-toggler-close d-block d-md-none" type="button" data-toggle="collapse" data-target="#toggle" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
+                            
+                                    <span class="navbar-toggler-close icon"></span>
+                                    
+                                </button>
+
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
@@ -66,49 +74,52 @@
 
         </div>
 
-        <section class="container-fluid banner">
+        <div class="container-fluid banner">
             <div class="row">
                 <div class="col-md-5 mx-md-auto">
                     <h1 class="title-banner">Distribuir</h1>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="container">
+        <section>
 
-            <div class="row justify-content-md-center">
+            <div class="container">
 
-                <div class="col-md-5 offeset-md-1">
-                    <h2>¿Tienes una tienda o negocio y te interesa distribuir nuestros productos?</h2>
-                    <p>Entonces llena el formulario con tus datos y te contactaremos a la brevedad.</p>
+                <div class="row justify-content-md-center w-100">
+
+                    <div class="col-md-5 offset-md-1">
+                        <h2 class=" text-center text-md-left">¿Tienes una tienda o negocio y te interesa distribuir nuestros productos?</h2>
+                        <p class=" text-center text-md-left">Entonces llena el formulario con tus datos y te contactaremos a la brevedad.</p>
+                    </div>
+
+                    <div class="col-md-5">
+                        <form class="form" action="">
+                            <div class="form-group">
+                                <label for="">Escribe tu nombre</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Escribe tu email</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Razón social</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">RUT Empresa</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">¿En que te podemos ayudar?</label>
+                                <textarea class="form-control" rows="7"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+
                 </div>
-
-                <div class="col-md-5">
-                    <form class="form" action="">
-                        <div class="form-group">
-                            <label for="">Escribe tu nombre</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Escribe tu email</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Razón social</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="">RUT Empresa</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="">¿En que te podemos ayudar?</label>
-                            <textarea class="form-control" rows="7"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </form>
-                </div>
-
             </div>
 
         </section>

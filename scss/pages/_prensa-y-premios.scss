@@ -8,9 +8,19 @@
         }
     }
     h2 {
-        margin-bottom: 15px;
         padding-top: 25px;
         font-weight: 400;
+        margin-bottom: 0!important;
+        text-align: center!important;
+        @include media(md) {
+            text-align: left!important;
+        }
+    }
+    p {
+        text-align: center!important;
+        @include media(md) {
+            text-align: left!important;
+        }
     }
     .premios,
     .prensa {
@@ -28,7 +38,7 @@
             .slick-arrow {
                 &.prev {
                     @include media(md) {
-                        right: 150px;
+                        right: 255px;
                     }
                     background-image: url(../img/flecha-izquierda-verde.svg);
                     &:hover {
@@ -37,7 +47,7 @@
                 }
                 &.next {
                     @include media(md) {
-                        right: 80px;
+                        right: 185px;
                     }
                     background-image: url(../img/flecha-derecha-verde.svg);
                     &:hover {

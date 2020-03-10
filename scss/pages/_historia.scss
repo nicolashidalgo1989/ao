@@ -1,22 +1,27 @@
 .historia {
     &:after {
-        background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 70%);
+        background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 40%);
     }
     &:before {
         background-image: url("../img/fondo-historia.png");
+        object-fit: auto;
+        background-size: auto!important;
+        opacity: 1!important;
+        @include opacity(1);
         @include media(md) {
             background-size: 100%;
             object-fit: contain;
         }
-        opacity: 1!important;
-        @include opacity(1);
     }
     .banner {
         blockquote {
-            background-image: url('../../img/comillas.png');
+            background-image: url('../img/comillas.png');
             background-repeat: no-repeat;
             background-position: center;
             padding: 20px 0
         }
+    }
+    section {
+        padding: 60px 0 70px;
     }
 }
