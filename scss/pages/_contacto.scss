@@ -32,4 +32,34 @@
               }
           }
       }
+      .distribucion-banner {
+          background-image: url(../../img/fondo-distribución-banner.png);
+          background-color: transparent;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          border-radius: 20px;
+          background-size: cover;
+          @include media(md) {
+              background-size: 100%;
+          }
+          h3 {
+              font-weight: 400;
+              color: $grey;
+              margin-bottom: 22px;
+              @include font-size(30px);
+              @include media(md) {
+                  @include font-size(40px);
+              }
+          }
+          .btn {
+              height: 45px;
+              padding: 10px 17px;
+              max-width: 300px;
+              @include font-size(14px);
+          }
+      }
   }

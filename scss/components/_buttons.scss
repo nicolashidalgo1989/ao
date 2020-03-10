@@ -1,16 +1,16 @@
 .btn {
+    font-weight: 700;
+    padding: 17px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50px;
+    @include font-size(18px);
+    @include transition(all .3s ease-in-out);
     &-success {
         background-color: $green;
-        font-weight: 700;
         border: none;
         color: white;
-        padding: 17px;
-        width: 100%;
-        max-width: 250px;
         margin: 0 auto;
-        border-radius: 50px;
-        @include font-size(18px);
-        @include transition(all .3s ease-in-out);
         &:hover {
             background-color: $green-dark;
         }
@@ -31,14 +31,24 @@
             bottom: -33px
         }
     }
-    &-outline-light {
-        color: $bg-main;
-        border: 2px solid $bg-main;
+    &-outline {
         background: transparent;
         @include transition(all .2s ease-in-out);
-        &:hover {
-            background: $bg-main;
+        &-light {
+            color: $bg-main;
+            border: 2px solid $bg-main;
+            &:hover {
+                background: $bg-main;
+                color: $green;
+            }
+        }
+        &-success {
             color: $green;
+            border: 2px solid $green;
+            &:hover {
+                background: $green;
+                color: $white;
+            }
         }
     }
 }

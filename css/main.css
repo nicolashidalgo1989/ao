@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat";
   font-weight: 400;
@@ -146,15 +147,11 @@ p {
   font-size: 1.875rem;
 }
 
-.btn-success {
-  background-color: #166439;
+.btn {
   font-weight: 700;
-  border: none;
-  color: white;
   padding: 17px;
   width: 100%;
   max-width: 250px;
-  margin: 0 auto;
   border-radius: 50px;
   font-size: 18px;
   font-size: 1.125rem;
@@ -163,6 +160,12 @@ p {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.btn-success {
+  background-color: #166439;
+  border: none;
+  color: white;
+  margin: 0 auto;
 }
 .btn-success:hover {
   background-color: #114E2C;
@@ -187,9 +190,7 @@ p {
 .btn-slide-down:hover {
   bottom: -33px;
 }
-.btn-outline-light {
-  color: white;
-  border: 2px solid white;
+.btn-outline {
   background: transparent;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -197,9 +198,21 @@ p {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.btn-outline-light {
+  color: white;
+  border: 2px solid white;
+}
 .btn-outline-light:hover {
   background: white;
   color: #166439;
+}
+.btn-outline-success {
+  color: #166439;
+  border: 2px solid #166439;
+}
+.btn-outline-success:hover {
+  background: #166439;
+  color: #efefef;
 }
 
 .card {
@@ -1024,6 +1037,43 @@ footer p {
   margin: 0;
   font-size: 18px;
   font-size: 1.125rem;
+}
+.contacto .distribucion-banner {
+  background-image: url(../../img/fondo-distribución-banner.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 20px;
+  background-size: cover;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .contacto .distribucion-banner {
+    background-size: 100%;
+  }
+}
+.contacto .distribucion-banner h3 {
+  font-weight: 400;
+  color: #4a4a4a;
+  margin-bottom: 22px;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .contacto .distribucion-banner h3 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
+.contacto .distribucion-banner .btn {
+  height: 45px;
+  padding: 10px 17px;
+  max-width: 300px;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .distribuir:before {
