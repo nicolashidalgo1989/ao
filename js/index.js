@@ -1,6 +1,58 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
 
-    var viewport = $(window).width();
+    $('#carousel.carousel').on('slide.bs.carousel', function() {
+
+        var scroll = $(window).scrollTop();
+        var viewport = document.documentElement.clientWidth;
+        var header = document.querySelector('.header-container');
+        var slideActive = $('#carousel .active');
+
+        if (viewport > 480) {
+
+            if (scroll < 78) {
+
+                if (slideActive.hasClass('light')) {
+
+                    header.classList.add('is-dark');
+                    header.classList.remove('is-light');
+
+                } else if (slideActive.hasClass('dark')) {
+
+                    header.classList.add('is-light');
+                    header.classList.remove('is-dark');
+
+                }
+
+            } else if (scroll > 78) {
+
+                if (slideActive.hasClass('light') || slideActive.hasClass('dark')) {
+
+                    header.classList.add('is-light');
+                    header.classList.remove('is-dark');
+
+                }
+
+            }
+
+        }
+
+    });
+
+    var btnSlideDown = document.querySelectorAll(".btn-slide-down");
+
+    btnSlideDown.forEach(function(anchor) {
+
+        anchor.addEventListener('click', function(e) {
+
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        });
+
+    });
 
     $('.productos-carousel').slick({
 
@@ -8,7 +60,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         infinite: false,
-        draggable: false,
+        draggable: true,
         centerMode: true,
         responsive: [{
             breakpoint: 1024,
@@ -64,227 +116,5 @@ $(document).ready(function() {
 
     });
 
-    $('.premios').slick({
-
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-arrow prev"></button>',
-        nextArrow: '<button type="button" class="slick-arrow next"></button>',
-        variableWidth: true,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3
-            }
-        }, {
-            breakpoint: 608,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }]
-
-    });
-
-    $('.prensa').slick({
-
-        arrows: false,
-        draggable: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        variableWidth: true,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2
-            }
-        }, {
-            breakpoint: 608,
-            settings: {
-                draggable: true,
-                slidesToShow: 1
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                draggable: true,
-                slidesToShow: 1
-            }
-        }]
-
-    });
-
-    $('.add').click(function(e) {
-        console.log($(this).prev().val());
-        if ($(this).prev().val() < 3) {
-            $(this).prev().val(+$(this).prev().val() + 1);
-        }
-    });
-
-    $('.sub').click(function(e) {
-        console.log($(this).next().val());
-        if ($(this).next().val() > 1) {
-            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-        }
-    });
-
-    if (viewport > 480) {
-
-        $('.producto-detalle').addClass('is-light');
-
-    }
-
-});
-
-$('#carousel.carousel-home').on('slide.bs.carousel', function() {
-
-    var viewport = $(window).width();
-    var scroll = $(window).scrollTop();
-    var hero = $('.hero');
-    var slideActive = $('#carousel .active');
-
-    if (slideActive.hasClass('light') && scroll < 200 && viewport > 480) {
-
-        hero.addClass('is-dark');
-        hero.removeClass('is-light');
-
-    } else if (slideActive.hasClass('dark') && scroll < 200 && viewport > 480) {
-
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
-
-    } else {
-
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
-
-    }
-
-});
-
-$('#carousel.carousel.product').on('slide.bs.carousel', function() {
-
-    var viewport = $(window).width();
-    var scroll = $(window).scrollTop();
-    var hero = $('.hero');
-    var slideActive = $('#carousel .active');
-
-    if (viewport < 480) {
-
-        if (slideActive.hasClass('light') && scroll < 200 && viewport > 480) {
-
-            hero.addClass('is-dark');
-            hero.removeClass('is-light');
-
-        } else if (slideActive.hasClass('dark') && scroll < 200 && viewport > 480) {
-
-            hero.addClass('is-light');
-            hero.removeClass('is-dark');
-
-        } else {
-
-            hero.addClass('is-light');
-            hero.removeClass('is-dark');
-
-        }
-
-    } else {
-
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
-
-    }
-
-});
-
-$(".btn-slide-down").on('click', function(event) {
-
-    if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function() {
-            window.location.hash = hash;
-        });
-    }
-
-});
-
-$('.badge').on('click', function(e) {
-
-    $(this).siblings('.badge').removeClass('active');
-    $(this).addClass('active');
-
-});
-
-$('.navbar-toggler').on('click', function(e) {
-    $('#toggle').addClass('show');
-});
-
-$('.navbar-toggler-close').on('click', function(e) {
-    $('#toggle').removeClass('show');
-});
-
-$(window).scroll(function() {
-
-    var header = $('.navbar');
-    var scroll = $(window).scrollTop();
-    var hero = $('.hero');
-    var pageProduct = $('.producto-detalle');
-    var viewport = $(window).width();
-    var slideActive = $('#carousel .active');
-    var slideActiveProduct = $('#carousel.product .active');
-
-    if (scroll >= 65) {
-
-        header.addClass("sticky");
-
-    } else if (scroll > 660) {
-
-        hero.addClass('is-light');
-        hero.removeClass('is-dark');
-
-    } else {
-
-        header.removeClass("sticky");
-
-    }
-
-    if (viewport > 480) {
-
-        if (scroll >= 65) {
-
-            $('#carousel.product').addClass('sticky');
-            pageProduct.css('padding-top', '78px');
-
-        } else {
-
-            $('#carousel.product').removeClass('sticky');
-            pageProduct.css('padding-top', '78px');
-
-        }
-
-    } else {
-
-        if (scroll >= 65) {
-
-            $('.producto-detalle').addClass('is-light');
-            $('.producto-detalle').removeClass('is-dark');
-
-        } else if (scroll <= 65 && slideActive.hasClass('dark')) {
-
-            $('.producto-detalle').addClass('is-dark');
-            $('.producto-detalle').removeClass('is-light');
-        }
-    }
 
 });

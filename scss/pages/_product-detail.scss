@@ -1,60 +1,42 @@
 .producto-detalle {
+    &.is-dark {
+        .carousel-control-prev-icon {
+            background-image: url('../img/flecha-izquierda-blanca.svg')!important;
+        }
+        .carousel-control-next-icon {
+            background-image: url('../img/flecha-derecha-blanca.svg')!important;
+        }
+    }
+    &.is-light {
+        .carousel-control-prev-icon {
+            background-image: url('../img/flecha-izquierda-verde.svg')!important;
+        }
+        .carousel-control-next-icon {
+            background-image: url('../img/flecha-derecha-verde.svg')!important;
+        }
+    }
     text-align: center;
     @include media(md) {
         text-align: left;
     }
-    .container {
-        .w-md-100 {
-            @include media(md) {
-                width: 100%!important;
-            }
-        }
-    }
-    .fixed-bottom-carousel {
-        position: static;
-        @include media(md) {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 1030;
-        }
-    }
     .navbar {
         background: transparent;
     }
-    .carousel.slide.product {
+    #carousel {
         height: 390px;
         margin-bottom: 10px;
-        position: relative;
         border-radius: 0;
-        @include transition(top .2s ease-in-out);
         @include media(md) {
             height: 633px;
-            position: fixed;
-            top: 78px;
             background-color: $white;
+            max-width: 530px;
+            width: 100%;
         }
         .carousel-control-next,
         .carousel-control-prev {
             @include media(md) {
                 height: 80%;
             }
-        }
-        &.at-footer {
-            position: absolute;
-            bottom: 0;
-            top: 0;
-        }
-        &.sticky {
-            @include media(md) {
-                top: 78px;
-                position: fixed;
-            }
-        }
-        @include media(md) {
-            max-width: 530px;
-            width: 100%;
         }
         .carousel-inner {
             border-radius: 0px 0px 30px 30px;
