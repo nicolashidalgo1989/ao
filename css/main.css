@@ -1638,7 +1638,7 @@ footer p {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("../../img/construccion-bg-mobile.png");
+  background-image: url("../img/construccion-bg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #4a4a4a;
@@ -1646,7 +1646,7 @@ footer p {
 }
 @media (min-width: 1023px) and (max-width: 1360px) {
   .password {
-    background-image: url("../../img/construccion-bg-desk.png");
+    background-image: url("../img/construccion-bg-desk.png");
   }
 }
 .password img {
