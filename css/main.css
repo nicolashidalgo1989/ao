@@ -1638,10 +1638,16 @@ footer p {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: none;
+  background-image: url("../../img/construccion-bg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #4a4a4a;
+  padding: 0 35px;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .password {
+    background-image: url("../../img/construccion-bg-desk.png");
+  }
 }
 .password img {
   margin-bottom: 20px;
@@ -1649,7 +1655,7 @@ footer p {
 .password h1.password-heading {
   text-transform: none !important;
   margin-bottom: 15px;
-  background: url(../img/detalle-separacion.svg) center top no-repeat transparent;
+  background: url("../img/detalle-separacion.svg") center top no-repeat transparent;
   padding-top: 25px;
   line-height: 25px;
   letter-spacing: 0;
@@ -1664,15 +1670,23 @@ footer p {
   font-family: "Playfair Display";
   text-transform: none !important;
   font-weight: 400;
-  max-width: 50%;
   width: 100%;
   letter-spacing: 0.5 !important;
   color: #4a4a4a;
-  line-height: 48px;
-  font-size: 40px;
-  font-size: 2.5rem;
+  line-height: 38px;
   background: none;
   margin: 0 auto 40px;
+  padding: 0;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .password h2.password-subheading {
+    max-width: 50%;
+    line-height: 48px;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
 }
 .password .link {
   font-family: "Playfair Display";
