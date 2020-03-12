@@ -91,6 +91,11 @@
             }
         }
     }
+    .carousel-control-next,
+    .carousel-control-prev {
+        z-index: 999;
+        cursor: pointer;
+    }
     .carousel-control-prev-icon {
         background-image: url('../img/flecha-izquierda-blanca.svg');
     }

@@ -612,6 +612,11 @@ form button.btn.btn-success {
 .header-container .carousel.slide .carousel-inner .carousel-item .carousel-caption p strong {
   font-weight: 700;
 }
+.header-container .carousel-control-next,
+.header-container .carousel-control-prev {
+  z-index: 999;
+  cursor: pointer;
+}
 .header-container .carousel-control-prev-icon {
   background-image: url("../img/flecha-izquierda-blanca.svg");
 }
