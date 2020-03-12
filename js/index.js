@@ -7,30 +7,26 @@ document.addEventListener('DOMContentLoaded', function() {
         var header = document.querySelector('.header-container');
         var slideActive = $('#carousel .active');
 
-        if (viewport > 480) {
+        if (scroll < 78) {
 
-            if (scroll < 78) {
+            if (slideActive.hasClass('light')) {
 
-                if (slideActive.hasClass('light')) {
+                header.classList.add('is-dark');
+                header.classList.remove('is-light');
 
-                    header.classList.add('is-dark');
-                    header.classList.remove('is-light');
+            } else if (slideActive.hasClass('dark')) {
 
-                } else if (slideActive.hasClass('dark')) {
+                header.classList.add('is-light');
+                header.classList.remove('is-dark');
 
-                    header.classList.add('is-light');
-                    header.classList.remove('is-dark');
+            }
 
-                }
+        } else if (scroll > 78) {
 
-            } else if (scroll > 78) {
+            if (slideActive.hasClass('light') || slideActive.hasClass('dark')) {
 
-                if (slideActive.hasClass('light') || slideActive.hasClass('dark')) {
-
-                    header.classList.add('is-light');
-                    header.classList.remove('is-dark');
-
-                }
+                header.classList.add('is-light');
+                header.classList.remove('is-dark');
 
             }
 
